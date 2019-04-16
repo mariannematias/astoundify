@@ -1,0 +1,238 @@
+
+@font-face {
+    font-family: Omnes;
+    src: url(fonts/Omnes.ttf)
+}
+@font-face {
+    font-family: OmnesExtraLight;
+    src: url(fonts/omnes-extralight.otf)
+}
+
+body {
+    font-family: 'Omnes', sans-serif;
+    color: #181b26;
+    line-height: 1.5;
+    font-size: 100%;
+}
+img {
+    width: 100%;
+}
+.container {
+    max-width: 1200px;
+    position: relative;
+    z-index: 2;
+    transition: all .5s ease-in-out;
+}
+.container-md {
+    max-width: 720px;
+}
+.container-sm {
+    max-width: 630px;
+}
+.container,
+.container-md,
+.container-sm {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.align-right {
+    text-align: right;
+}
+.align-center {
+    text-align: center;
+}
+.align-left {
+    text-align: left;
+}
+.section-title {
+    color: #181b26;
+    font-family:'OmnesExtraLight', sans-serif;
+    font-size: 36px;
+    line-height: 1;
+}
+
+
+/*** Navbar ***/
+header {
+    background-color: #181b26;
+    width: 100%;
+}
+.logo {
+    width: 30px;
+    height: 30px;
+}
+.navbar {
+    padding: 30px 0;
+}
+.navbar-collapse {
+    padding-top: 3px;
+}
+.navbar-brand {
+    color: #fff;
+    margin-right: 30px;
+    font-size: 1.35rem;
+}
+.navbar-brand:hover {
+    color: #fff;
+}
+.navbar-nav a,
+.nav-login {
+    text-transform: uppercase;
+    color: #7d91a5;
+    display: inline-block;
+    letter-spacing: 2.15px;
+    font-size: 14px;
+}
+.navbar-nav a:hover,
+.nav-login:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.search-input {
+    color: #3c3c46;
+    background: #090a0e;
+    border: 0;
+    width: 140px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 50px;
+}
+.social-icon {
+    color: #8E98A2;
+    font-size: 1.2rem;
+    padding: 5px 20px 5px 12px;
+}
+.social-icon:hover {
+    color:#3381f3;
+}
+.sign-up {
+    background-color: transparent;
+    border: 1px solid #d9dfdb26;
+    color: #3381f3;
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin-left: 20px
+}
+.sign-up:hover {
+    border: 1px solid #3381f3;
+}
+
+
+/*** Banner ***/
+.banner-section {
+    padding-top: 9em;
+    background-color: #181b26;
+}
+.banner-left {
+    padding-right: 2.75rem;
+    padding-top: 5rem;
+}
+.banner-right img {
+    width: 125%;
+}
+.banner-title {
+    font-size: 60px;
+    color: #fff;
+}
+.banner-title a {
+    color: #3381f3;
+    border-bottom: 1px solid #3381f32e;
+}
+.banner-title a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #3381f3;
+}
+.banner-subtitle {
+    color: #a7b7c7;
+    font-size: 24px;
+}
+.get-started,
+.section-btn {
+    border: 1px solid #3381f3;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #3381f3;
+    padding: 13px 45px;
+    margin-top: 12px;
+    letter-spacing: 2.2px;
+    transition: all .3s;
+    text-transform: uppercase;
+}
+
+/*** Sections ***/
+.white-section,
+.blue-section {
+    padding: 150px 0;
+}
+.blue-section {
+    background-color: #F4F9FC;
+}
+.blue-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4.4px;
+    color: #5e50fb;
+    margin-bottom: 15px;
+}
+.subtitle {
+    font-family:'OmnesExtraLight', sans-serif;
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 32px;
+    color: #7d91a5;
+}
+.section-btn .fas {
+    padding-left: 8px;
+    color: #0b50b5;
+}
+.btn-white {
+    border-color: #fff;
+    background: #fff;
+    color: #7d91a5;
+    padding: 14px 50px 13px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    transition: all .3s;
+}
+.testimonial {
+    background-color: #6d5cae;
+}
+.testimonial .testi-box {
+    padding-right: 100px;
+    padding-left: 22px;
+}
+.testimonial .quote {
+    color: #0000004d;
+    padding-top: 90px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4.4px;
+    margin-bottom: 15px;
+}
+.testimonial .quote .fas {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.testimonial .testi-title {
+    color: #fff;
+    font-size: 36px;
+    font-family:'OmnesExtraLight', sans-serif;
+}
+.testimonial .author {
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    color: #fff;
+    opacity: .7;
+}
+.testimonial .testi-btn {
+    margin-top: 60px;
+    margin-bottom: 5rem;
+}
+.testimonial .testi-img {
+    position: absolute;
+    bottom: 0;
+    height: 92%;
+}
