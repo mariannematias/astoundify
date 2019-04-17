@@ -1,0 +1,154 @@
+
+.head-section {
+    background: #181b26;
+    background-image: linear-gradient(-180deg,rgba(0,0,0,.2) 0,transparent 34%);
+    overflow: hidden;
+}
+.banner-img {
+    background-image: url(../images/temp3.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+    background-size: cover;
+    animation: fadeIn30 ease-in .75s forwards;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.banner-img:before {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 400px;
+    bottom: auto;
+    opacity: .85;
+    background-image: linear-gradient(-180deg,#181b26 0,#24242e00 100%);
+}
+.head-section:before {
+    opacity: .85;
+    background-image: linear-gradient(-180deg,#181b26 0,#24242e00 100%);
+}
+.banner-section {
+    padding: 170px 0 200px;
+}
+.banner-section .section-title {
+    font-size: 4.375rem;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 65%;
+}
+.banner-section .sub-hero {
+    color: #a7b7c7;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    margin-top: 19px;
+    margin-bottom: 19px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+.section-title {
+    font-size: 46px;
+}
+.team {
+    margin-top: 3em;
+}
+.team-title {
+    font-size: 60px;
+    font-family: 'OmnesExtraLight', sans-serif;
+}
+.member {
+    position: relative;
+}
+.member-img {
+    box-shadow: 0 3px 3px 0 #0000000d;
+}
+.member-img img {
+    border-radius: 4px;
+    transition: all .5s ease;
+}
+.member-info {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    padding-top: 25%;
+    transition: all .3s ease;
+}
+.member-info p {
+    margin-bottom: 0;
+}
+.member-info .position {
+    border: 1px solid #EFD469;
+    border-radius: 100px;
+    font-size: 12px;
+    color: #EFD469;
+    letter-spacing: 2.5px;
+    padding: 4px 10px;
+    text-transform: uppercase;
+}
+.member-info .member-name {
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+    margin: 10px 0 0;
+}
+.member-info .address {
+    color: #fff;
+    opacity: .6;
+    font-family: 'OmnesExtraLight', sans-serif;
+    margin: 0;
+    font-size: 18px;
+    line-height: 26px;
+}
+.member-info .social-links {
+    padding-left: 0;
+    margin-top: 15px;
+    list-style-type: none;
+}
+.member-info .social-links li {
+    display: inline;
+    margin: 0 6px;
+}
+.member-info .social-links li .fab {
+    font-size: 1.2rem;
+    color: #fff;
+}
+.block {
+    margin-bottom: 0;
+}
+.no-padding {
+    padding-bottom: 0;
+}
+.image-list {
+    margin-top: 75px;
+}
+.list {
+    padding-left: 0;
+    padding-right: 0;
+    height: 350px;
+    overflow: hidden;
+}
+
+/** Footer **/
+footer {
+    background: #fff;
+}
+footer .social-title {
+    color: #242a3b;
+}
+footer .footer-links ul li a:hover {
+    color: #181b26;
+}

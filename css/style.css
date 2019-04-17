@@ -137,16 +137,36 @@ section {
 
 /*** Banner ***/
 .banner-section {
-    padding-top: 9em;
+    padding-top: 7em;
 }
 .banner-left {
     padding-right: 2.75rem;
     padding-top: 5rem;
 }
+.legend {
+    float: right;
+    text-align: right;
+    margin-bottom: 20px;
+}
+.legend p {
+    margin-bottom: 0;
+}
+.legend a {
+    font-size: 18px;
+    color: #fff;
+    border-bottom: 1px solid #9292A2;
+}
+.legend a:hover {
+    text-decoration: none;
+}
+.legend .sub {
+    color: #7d91a5;
+}
 .banner-right img {
     position: absolute;
     bottom: 0;
-    right: -125px;
+    right: -155px;
+    width: 700px;
 }
 .banner-title {
     font-size: 60px;
@@ -163,9 +183,6 @@ section {
 .banner-subtitle {
     color: #a7b7c7;
     font-size: 24px;
-}
-.get-started {
-    margin-bottom: 70px;
 }
 .get-started,
 .section-btn {
@@ -650,7 +667,7 @@ footer .copyright {
     .banner-right img {
         position: absolute;
         bottom: 0;
-        right: 0;
+        right: auto;
     }
     .banner-section {
         padding-top: 0em;
@@ -697,6 +714,9 @@ footer .copyright {
 
 
 @media (max-width: 768px) {
+    .legend {
+        display: none;
+    }
     .banner-right img {
         position: relative;
         bottom: 0;
