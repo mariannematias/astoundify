@@ -1,16 +1,10 @@
-
-.head-section {
-    background: #181b26;
-    background-image: linear-gradient(-180deg,rgba(0,0,0,.2) 0,transparent 34%);
-    overflow: hidden;
-}
 .banner-img {
-    background-image: url(../images/temp3.jpg);
+    background-image: url(../images/about-hero.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: scroll;
     background-size: cover;
-    animation: fadeIn30 ease-in .75s forwards;
+    animation: fadeIn ease-in .75s forwards;
     display: block;
     position: absolute;
     top: 0;
@@ -21,17 +15,21 @@
 }
 .banner-img:before {
     content: '';
-    position: relative;
-    display: block;
     width: 100%;
-    height: 400px;
-    bottom: auto;
-    opacity: .85;
-    background-image: linear-gradient(-180deg,#181b26 0,#24242e00 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.7);
 }
-.head-section:before {
-    opacity: .85;
-    background-image: linear-gradient(-180deg,#181b26 0,#24242e00 100%);
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
 }
 .banner-section {
     padding: 170px 0 200px;
@@ -55,6 +53,17 @@
 .section-title {
     font-size: 46px;
 }
+.sketch {
+    box-shadow: 0 6px 15px 0 rgba(99,115,107,.12), 0 2px 3px 0 rgba(0,0,0,.04);
+}
+.sketch img {
+    border-radius: 4px;
+    height: 320px;
+    width: 450px;
+}
+.sketch-desc {
+    padding: 30px 0 0 30px;
+}
 .team {
     margin-top: 3em;
 }
@@ -64,6 +73,8 @@
 }
 .member {
     position: relative;
+    max-width: 265px;
+    margin: 0 auto;
 }
 .member-img {
     box-shadow: 0 3px 3px 0 #0000000d;
@@ -73,7 +84,6 @@
     transition: all .5s ease;
 }
 .member-info {
-    visibility: hidden;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -86,6 +96,10 @@
     text-align: center;
     padding-top: 25%;
     transition: all .3s ease;
+    background: rgba(0,0,0,.7);
+}
+.member-info:hover {
+    opacity: 1;
 }
 .member-info p {
     margin-bottom: 0;
@@ -135,6 +149,9 @@
 .image-list {
     margin-top: 75px;
 }
+.image-list .list img {
+    height: 350px;
+}
 .list {
     padding-left: 0;
     padding-right: 0;
@@ -151,4 +168,18 @@ footer .social-title {
 }
 footer .footer-links ul li a:hover {
     color: #181b26;
+}
+
+
+@media (max-width: 991px) {
+    .member {
+        margin-bottom: 60px;
+    }
+    .banner-section {
+        padding: 0 0 60px 0;
+    }
+    .sketch img {
+        height: auto;
+        width: 100%;
+    }
 }

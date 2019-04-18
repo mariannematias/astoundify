@@ -748,10 +748,34 @@ footer .copyright {
     .block {
         max-width: 100%;
     }
+    .footer-links,
+    .social,
+    .help {
+        text-align: center;
+    }
+    .community img,
+    footer .help .fas {
+        display: none;
+    }
+    footer .social .mail .join-newsletter {
+        width: 70%;
+    }
 }
 
 @media (max-width: 576px) {
     .feedback .awards li {
         margin-right: 20px;
+    }
+    .footer-links,
+    .social,
+    .help {
+        text-align: center;
+    }
+    footer .social .mail .join-newsletter {
+        width: 70%;
+    }
+    .community img,
+    footer .help .fas {
+        display: none;
     }
 }
