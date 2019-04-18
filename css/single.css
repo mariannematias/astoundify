@@ -1,0 +1,18 @@
+.banner-img {
+    height: 500px;
+}
+.banner-img:before {
+    height: 500px;
+}
+.banner-section {
+    padding-bottom: 80px;
+}
+.container-post {
+    margin-left: 16%;
+    color: #7d91a5;
+    font-size: 22px;
+    line-height: 32px;
+}
+.container-post p {
+    margin-bottom: 24px;
+}

@@ -36,6 +36,9 @@ a:hover {
       opacity: 1;
     }
 }
+.btn-white a {
+    color: #7d91a5;
+}
 .banner-section {
     padding: 70px 0 120px;
 }
