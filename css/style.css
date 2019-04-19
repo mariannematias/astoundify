@@ -763,6 +763,10 @@ footer .copyright {
 }
 
 @media (max-width: 576px) {
+    .white-section, 
+    .blue-section {
+        padding: 60px 0;
+    }
     .feedback .awards li {
         margin-right: 20px;
     }
@@ -777,5 +781,48 @@ footer .copyright {
     .community img,
     footer .help .fas {
         display: none;
+    }
+    .blog-news {
+        background-color: #fff;
+        background-image: none;
+        color: #7d91a5;
+        border-bottom: 1px solid #9292a24d;
+    }
+    .blog-news h2 {
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 2.86px;
+        margin-bottom: 8px;
+    }
+    .blog-news p {
+        font-size: 18px;
+        line-height: 19px;
+        margin-bottom: 30px;
+    }
+    .footer-links .col-sm-6 {
+        width: 50%;
+    }
+    #navBarSearch .form-inline .form-control {
+        width: 80%;
+    }
+    .feedback {
+        background-image: none;
+        padding: 60px 0;
+    }
+    .feedback .dots,
+    .banner-frame {
+        display: none;
+    }
+    .banner-left {
+        text-align: center;
+        padding: 1rem;
+    }
+    .theme-animation .theme-front {
+        top: 0;
+        left: 58%;
+    }
+    .icons {
+        overflow: hidden;
+        height: 100px;
     }
 }

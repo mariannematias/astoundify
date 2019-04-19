@@ -288,4 +288,7 @@ footer .footer-links ul li a:hover {
     .sort-list li.active {
         border-left: 2px solid #3381f3;
     }
+    .blog-news {
+        border-top: 1px solid #9292a24d;
+    }
 }

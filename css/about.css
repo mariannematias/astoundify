@@ -169,6 +169,34 @@ footer .social-title {
 footer .footer-links ul li a:hover {
     color: #181b26;
 }
+.blog-news {
+    display: none;
+}
+.updates {
+    font-size: 18px;
+    line-height: 26px;
+}
+.blog-news {
+    padding: 50px 0;
+}
+.join-newsletter {
+    color: #7d91a5;
+    font-size: 16px;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #3e465e33;
+    background: #FFF;
+    transition: 70ms ease-in-out;
+    border-radius: 4px;
+}
+.newsletter {
+    position: relative;
+}
+.newsletter .fab {
+    position: absolute;
+    top: 0;
+}
 
 
 @media (max-width: 991px) {
@@ -182,4 +210,25 @@ footer .footer-links ul li a:hover {
         height: auto;
         width: 100%;
     }
+}
+
+@media (max-width: 768px) {
+    .banner-img,
+    .banner-img:before {
+        height: 560px;
+    }
+}
+
+
+@media (max-width: 576px) { 
+    .banner-section .section-title {
+        font-size: 3.5rem;
+    }
+    .sketch-desc {
+        padding: 30px;
+    }
+    .blog-news {
+        display: block;
+    }
+    
 }
