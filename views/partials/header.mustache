@@ -1,0 +1,33 @@
+<header>
+    <nav class="navbar navbar-expand-lg" data-aos="fade-down" data-aos-duration="1000">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="toggle fas fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="/">
+                <img class="logo" src="{{global.logo}}" class="d-inline-block align-top" alt="">
+                <span>{{global.name}}</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarSearch" aria-controls="navBarSearch" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="toggle fas fa-search"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="blog">{{global.head-nav.list1}}</a>
+                    <a class="nav-item nav-link" href="about">{{global.head-nav.list2}}</a>
+                </div>
+
+                <a class="nav-login" href="#">{{global.head-nav.list3}}</a>
+                <button class="btn my-2 my-sm-0 sign-up">{{global.head-nav.list4}}</button>
+            </div>
+            <div class="collapse navbar-collapse" id="navBarSearch">  
+                <form class="form-inline ml-auto">
+                    <input class="form-control search-input" type="search" placeholder="Search..." aria-label="Search">
+                </form>
+                <a class="social-icon" href="#"><span class="fas fa-shopping-bag"></span>
+                <a class="nav-login" href="#">{{global.head-nav.list3}}</a>
+                <button class="btn my-2 my-sm-0 sign-up">{{global.head-nav.list4}}</button>
+            </div>
+        </div>
+    </nav> 
+</header>

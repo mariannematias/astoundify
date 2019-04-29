@@ -1,0 +1,142 @@
+{ 
+  "hero": {
+    "title": "Themes & add-ons for",
+    "title-a": "job boards",
+    "desc": "Astoundify provides everything you need to power your online business.",
+    "btn": "Get Started",
+    "legend": {
+      "text1": "Listify",
+      "text2": "user-driven directory"
+    },
+    "img": "images/temp1.jpg"
+  },
+  "section1": {
+    "blue": "Astoundify Themes",
+    "title": "Handcrafted designs with usability and profit in mind.",
+    "sub": "With a focus on usability, conversions, empathy for your customers and tight integration with plugins like WooCommerce and Easy Digital Downloads, you won’t find better themes for your site.",
+    "btn": "Themes",
+    "img1": "images/dummy2.jpg",
+    "img2": "images/dummy.jpg"
+  },
+  "section2": {
+    "blue": "Astoundify Add-ons",
+    "title": "Add extra functionality to our themes with tailor-made plugins.",
+    "sub": "Our team has spent thousands of hours coding a variety of features you might want to add to your site, all so you can get started quickly and easily.",
+    "btn": "Add-ons",
+    "icons": [
+      {
+        "class": "icon icon-1",
+        "src": "images/icon1.png",
+        "fade": "fade-down",
+        "time": "1000"
+      },
+      {
+        "class": "icon icon-2",
+        "src": "images/icon3.png",
+        "fade": "fade-down",
+        "time": "1200"
+      },
+      {
+        "class": "icon icon-3",
+        "src": "images/icon2.png",
+        "fade": "fade-down",
+        "time": "2000"
+      },
+      {
+        "class": "icon icon-4",
+        "src": "images/icon4.png",
+        "fade": "fade-down",
+        "time": "1500"
+      },
+      {
+        "class": "icon icon-5",
+        "src": "images/icon5.png",
+        "fade": "fade-up",
+        "time": "1000"
+      },
+      {
+        "class": "icon icon-6",
+        "src": "images/icon4.png",
+        "fade": "fade-up",
+        "time": "1400"
+      },
+      {
+        "class": "icon icon-7",
+        "src": "images/icon1.png",
+        "fade": "fade-up",
+        "time": "1100"
+      },
+      {
+        "class": "icon icon-8",
+        "src": "images/icon4.png",
+        "fade": "fade-up",
+        "time": "1500"
+      }
+    ]
+  },
+  "section3": {
+    "blue": "Testimonial",
+    "title": "If you’re trying to get a marketplace, directory or job board site launched in a matter of hours, there’s only one name you need to know: Astoundify.",
+    "sub": "JAWB.IO",
+    "btn": "Visit Site",
+    "img": "images/temp2.jpg"
+  },
+  "section4": {
+    "blue": "Happy Customers",
+    "title": "Empowering online businesses globally",
+    "lists": [
+      {
+        "desc": "31,000+",
+        "sub": "Customers"
+      },
+      {
+        "desc": "97%",
+        "sub": "Help Score"
+      },
+      {
+        "desc": "4.5 / 5",
+        "sub": "Theme Rating"
+      }
+    ],
+    "dots": [{"class": "dot dot-1"}, {"class": "dot dot-2"}, {"class": "dot dot-3"}, {"class": "dot dot-4"}, {"class": "dot dot-5"}, {"class": "dot dot-6"}, {"class": "dot dot-7"}]
+  },
+  "section5": {
+    "blue": "Community",
+    "title": "Learn, share and grow with our community.",
+    "tile": {
+      "tile1": {
+        "cat": "Live",
+        "title": "Astoundify Live: Ways to speed up your Listify site!",
+        "date": "2 years ago by",
+        "name": "Adam Pickering"
+      },
+      "tile2": {
+        "title": "Astoundify",
+        "handle": "@Astoundify",
+        "btn": "Follow Us"
+      }
+    },
+    "tiles": [
+      {
+        "class": "featured featured-2",
+        "cat": "Tutorial",
+        "title": "6 Ways to Quickly Monetize Your Directory Site",
+        "date": "2 years ago by",
+        "name": "Megan Jones"
+      },
+      {
+        "class": "featured featured-3",
+        "cat": "Tutorial",
+        "title": "Choosing the Right Payment Gateway for Your Site",
+        "date": "2 years ago by",
+        "name": "Megan Jones"
+      }
+    ],
+    "btn": "Visit Site"
+  },
+  "section6": {
+    "title": "You could be running your online business by tomorrow",
+    "sub": "Are you ready to get started? It's never been this easy.",
+    "btn": "Browse"
+  }
+}

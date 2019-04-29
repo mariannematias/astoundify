@@ -1,0 +1,64 @@
+<footer>
+    <div class="help">
+        <div class="container">
+            <div class="row offset-left">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <i class="fas fa-cog"></i>
+                    <h3>{{global.footer.help.title}}</h3>
+                    <p class="help-sub">{{global.footer.help.sub.desc}} <a href="#">{{global.footer.help.sub.desc-a}}</a> or <a href="#">{{global.footer.help.sub.desc-a2}}</a> {{global.footer.help.sub.desc2}}</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 help">
+                    <p><button class="btn section-btn">{{global.footer.help.btn}}</button></p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="social">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 sneak-peeks">
+                    <h4 class="social-title"><i class="fas fa-basketball-ball"></i>{{global.footer.social.lists.list1.title}}</h4>
+                    <p>{{global.footer.social.lists.list1.desc}} <a href="#">{{global.footer.social.lists.list1.desc-a}}.</a></p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 community">
+                    <h4 class="social-title"><i class="fab fa-facebook-square"></i>{{global.footer.social.lists.list2.title}}</h4>
+                    <p>{{global.footer.social.lists.list2.desc}} <a href="#">{{global.footer.social.lists.list2.desc-a}}</a> {{global.footer.social.lists.list2.desc2}}</p>
+                    <p><img src="{{global.footer.social.lists.list2.img}}" alt=""> </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 mail">
+                    <h4 class="social-title"><i class="fas fa-envelope"></i>{{global.footer.social.lists.list3.title}}</h4>
+                    <p>{{global.footer.social.lists.list3.desc}}</p>
+                    <form>
+                        <input type="email" name="email" id="email" placeholder="Email Address" class="join-newsletter">
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-links">
+        <div class="container">
+            <div class="row">
+                {{#global.footer.links}}
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <h4 class="social-title">{{title}}</h4>
+                        <ul>
+                            <li><a href="#">{{link1}}</a></li>
+                            <li><a href="#">{{link2}}</a></li>
+                            <li><a href="#">{{link3}}</a></li>
+                        </ul>
+                    </div>
+                {{/global.footer.links}}
+            </div>
+        </div>
+    </div>
+
+    <p class="align-center copyright">
+        <img class="logo" src="{{global.footer.copyright.img}}"><br>
+        {{global.footer.copyright.text}}
+    </p>
+    
+</footer>

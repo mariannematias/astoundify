@@ -1,0 +1,71 @@
+{ 
+  "name": "Astoundify",
+  "logo": "images/dummy-logo.png",
+  "head-nav": {
+    "list1": "Blog",
+    "list2": "About",
+    "list3": "Login",
+    "list4": "Signup"
+  },
+  "footer": {
+    "help": {
+      "title": "Always ready to help.",
+      "sub": {
+        "desc": "View our",
+        "desc-a": "documentation",
+        "desc-a2": "speak to us directly",
+        "desc2": "about an issue."
+      },
+      "btn": "New Ticket"
+    },
+    "social": {
+      "lists": {
+        "list1": {
+          "title": "Sneak Peeks",
+          "desc": "Upcoming projects on our",
+          "desc-a": "Dribbble"
+        },
+        "list2": {
+          "title": "Our Community",
+          "desc": "Join the",
+          "desc-a": "Astoundify Group",
+          "desc2": "on Facebook.",
+          "img": "images/id.png"
+        },
+        "list3": {
+          "title": "Weekly Newsletter",
+          "desc": "Stay informed on the latest from Astoundify."
+        }
+      }
+    },
+    "links": [
+      {
+        "title": "Themes",
+        "link1": "Marketify",
+        "link2": "Jobify",
+        "link3": "Listify"
+      },
+      {
+        "title": "Add-ons",
+        "link1": "Claim Listing",
+        "link2": "Statistics",
+        "link3": "View All →"
+      },
+      {
+        "title": "About Us",
+        "link1": "Team",
+        "link2": "Blog"
+      },
+      {
+        "title": "Get in touch",
+        "link1": "Support",
+        "link2": "Twitter",
+        "link3": "Facebook"
+      }
+    ],
+    "copyright": {
+      "text": "Copyright © 2012—2019 Astoundify, Inc. All rights reserved.",
+      "img": "images/dummy-logo.png"
+    }
+  }
+}
