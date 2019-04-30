@@ -1,0 +1,62 @@
+{ 
+  "hero": {
+    "title": "Astoundify Live: Ways to speed up your Listify site!",
+    "name": "Adam Pickering",
+    "cat": "Live",
+    "date": "March 10, 2017"
+  },
+  "section1": {
+    "meta": {
+      "list1": {
+        "title": "Reading",
+        "sub": "Astoundify Live: Ways to speed up your Listify site!"
+      },
+      "list2": {
+        "social1": "Tweet",
+        "social2": "Share"
+      },
+      "list3": {
+        "title": "Discussion",
+        "sub": "2 Responses"
+      }
+    }
+  },
+  "section2": {
+    "title": "Join our Community",
+    "sub": "Get updates, freebies, exclusive sneak peeks, and much more!"
+  },
+  "section3": {
+    "content": {
+      "p": "Okay so here it is, my first time doing a",
+      "p-a": "Facebook Live stream",
+      "p2": "and here’s the replay of the event from our Facebook Page, don’t forget to",
+      "p-a2": "like our page",
+      "p3": "Thanks to everyone who showed up and asked questions, I had fun setting this up and attempting to install a new plugin called the “Gonzales plugin” that sped up the site! (Sorry for the cut out in audio at the end, I’ll work on that.)"
+    },
+    "content2": {
+      "p": "I’ll be doing this every Friday starting next week (unless no one shows up). You can watch last week’s episode below, then send in your own question for the next show. The next show will be on",
+      "p-a": "“Setting up WordPress SEO by Yoast The Correct Way”",
+      "p2": "so make sure you",
+      "p-a2": "confirm that you’ll be attending this event on Facebook",
+      "p3": "March 17th 2017"
+    },
+    "cat": "Live",
+    "author": {
+      "img": "images/2.png",
+      "name": "Adam Pickering",
+      "position": "Semi-Genius. Designer | Co-founder @Astoundify",
+      "btn": "View Posts"
+    },
+    "prev": {
+      "nav": "Prev",
+      "text": "6 Ways to Quickly Monetize Your Directory Site"
+    },
+    "comments": {
+      "img": "images/3.png",
+      "name": "ramasrinivas",
+      "time": "2 years ago",
+      "body": "Does the 7 day free trial include plugins also",
+      "reply": "View Replies"
+    }
+  }
+}

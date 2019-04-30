@@ -1,0 +1,65 @@
+{ 
+  "hero": {
+    "blue": "About Us",
+    "title": "We're a small team making big products.",
+    "sub": "All the tools you need to improve your online business.",
+    "bg": "images/about-hero.jpg"
+  },
+  "section1": {
+    "blue": "Empowering Businesses",
+    "title": "We win when you win.",
+    "sub": "Our mission is to make starting a successful business online accessible to everyone. We're building tools & products to help our customers go from an idea to revenue without ever having to write a line of code. Our customers depend on us for their business and we are constantly setting the bar for great customer support.",
+    "img": "images/sketch.jpg"
+  },
+  "section2": {
+    "blue": "Meet the Team",
+    "title": "We're an international team.",
+    "team": [ 
+      {
+        "img": "images/team1.jpg",
+        "position": "Co-Founder",
+        "name": "Adam Pickering",
+        "address": "Toronto, Canada",
+        "link1": "fab fa-twitter",
+        "link2": "fab fa-dribbble"
+      },
+      {
+        "img": "images/team2.jpg",
+        "position": "Co-Founder",
+        "name": "Spencer Finnell",
+        "address": "Orlando, FL",
+        "link1": "fab fa-twitter",
+        "link2": "fab fa-github"
+      },
+      {
+        "img": "images/team4.jpg",
+        "position": "Support Lead",
+        "name": "Fernando Salinas",
+        "address": "Toronto, Canada"
+      },
+      {
+        "img": "images/team1.jpg",
+        "position": "Developer",
+        "name": "David Chandra",
+        "address": "Java, Indonesia",
+        "link1": "fab fa-twitter",
+        "link2": "fab fa-github"
+      }
+    ]
+  },
+  "section3": {
+    "blue": "Our Culture",
+    "title": "Learn, share and grow with our community.",
+    "list1": [{"src": "images/work6.jpg"}, {"src": "images/work1.jpg"}, {"src": "images/work2.jpg"}],
+    "list2": [{"src": "images/work3.jpg"}, {"src": "images/work4.jpg"}, {"src": "images/work5.jpg"}]
+  },
+  "section4": {
+    "title": "Want to talk to us?",
+    "sub": "Inquiring on a position, or have some ideas for us? Hit us up!",
+    "btn": "Get in touch"
+  },
+  "section5": {
+    "title": "Join our Community",
+    "sub": "Get updates, freebies, exclusive sneak peeks, and much more!"
+  }
+}

@@ -1,3 +1,7 @@
+header {
+    position: relative;
+    z-index: 10;
+} 
 a:hover {
     text-decoration: none;
 }
@@ -247,6 +251,10 @@ footer .social-title {
 }
 footer .footer-links ul li a:hover {
     color: #181b26;
+}
+footer .help,
+footer .social {
+    display: none;
 }
 
 @media (max-width: 768px) {

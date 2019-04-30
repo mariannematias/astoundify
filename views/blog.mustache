@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Astoundify</title>
+    <title>{{global.name}}</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/aos.css" rel="stylesheet">
@@ -18,52 +17,20 @@
 
   <body>
         <div class="head-section">
-            <header>
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="toggle fas fa-bars"></i>
-                        </button>
-                        <a class="navbar-brand" href="/">
-                            <img class="logo" src="images/dummy-logo.png" class="d-inline-block align-top" alt="">
-                            <span>Astoundify</span>
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarSearch" aria-controls="navBarSearch" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="toggle fas fa-search"></i>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-item nav-link active" href="#">Blog</a>
-                                <a class="nav-item nav-link" href="about">About</a>
-                            </div>
-        
-                            <a class="nav-login" href="#">Login</a>
-                            <button class="btn my-2 my-sm-0 sign-up">Sign Up</button>
-                        </div>
-                        <div class="collapse navbar-collapse" id="navBarSearch">  
-                            <form class="form-inline ml-auto">
-                                <input class="form-control search-input" type="search" placeholder="Search..." aria-label="Search">
-                            </form>
-                            <a class="social-icon" href="#"><span class="fas fa-shopping-bag"></span>
-                            <a class="nav-login" href="#">Login</a>
-                            <button class="btn my-2 my-sm-0 sign-up">Sign Up</button>
-                        </div>
-                    </div>
-                </nav> 
-            </header>
+            {{>header}}
             <section class="banner-section">
                 <div class="container">
                     <div class="align-center" >
-                        <p class="blue-title">Featured</p>
-                        <h1 class="section-title">Astoundify Live: Ways to speed up your Listify site!</h1>
+                        <p class="blue-title">{{page.hero.blue}}</p>
+                        <h1 class="section-title">{{page.hero.title}}</h1>
                         <div class="post">
-                            <p class="align-center author">by<a href="#">Adam Pickering</a></p>
+                            <p class="align-center author">by<a href="#">{{page.hero.name}}</a></p>
                             <ul class="post-details">
-                                <li><a href="#">Live</a></li>
-                                <li>March 10, 2017</li>
+                                <li><a href="#">{{page.hero.cat}}</a></li>
+                                <li>{{page.hero.date}}</li>
                             </ul>
                         </div>
-                        <p><button class="btn btn-white"><a href="single">Read more</a></button></p>
+                        <p><button class="btn btn-white"><a href="single">{{page.hero.btn}}</a></button></p>
                     </div>
                 </div>
             </section>
@@ -74,180 +41,32 @@
         <section class="white-section">
             <div class="container">
                 <ul class="sort-list">
-                    <li class="active"><a href="#">All</a></li>
-                    <li><a href="#">Announcements</a></li>
-                    <li><a href="#">Live</a></li>
-                    <li><a href="#">Product Updates</a></li>
-                    <li><a href="#">Tutorial</a></li>
+                    {{#page.section1.sort}}
+                        <li class="{{class}}"><a href="#">{{text}}</a></li>
+                    {{/page.section1.sort}}
                 </ul>
-
-                <div class="blog-post">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="blog-box">
-                                <div class="blog-header header-1">
-                                    <p class="blog-category"><a href="#">Live</a></p>
-                                    <span class="blog-icon">
-                                        <img src="images/2.png">
-                                    </span>
-                                    <p class="blog-author"><a href="#">Adam Pickering</a></p>
-                                </div>
-                                <div class="blog-content">
-                                    <h3 class="section-title"><a href="single">Astoundify Live: Ways to speed up your Listify site!</a></h3>
-                                    <p class="blog-date">March 10, 2017</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="blog-box">
-                                <div class="blog-header header-2">
-                                    <p class="blog-category"><a href="#">Tutorial</a></p>
-                                    <span class="blog-icon">
-                                        <img src="images/4.png">
-                                    </span>
-                                    <p class="blog-author"><a href="#">Megan Jones</a></p>
-                                </div>
-                                <div class="blog-content">
-                                    <h3 class="section-title"><a href="single">6 Ways to Quickly Monetize Your Directory Site</a></h3>
-                                    <p class="blog-date">March 10, 2017</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="blog-box">
-                                <div class="blog-header header-3">
-                                    <p class="blog-category"><a href="#">Tutorial</a></p>
-                                    <span class="blog-icon">
-                                        <img src="images/4.png">
-                                    </span>
-                                    <p class="blog-author"><a href="#">Megan Jones</a></p>
-                                </div>
-                                <div class="blog-content">
-                                    <h3 class="section-title"><a href="single">Choosing the Right Payment Gateway for Your Site</a></h3>
-                                    <p class="blog-date">February 22, 2017</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="blog-post">
+                {{#page.section1.blogs}}
+                    <div class="{{class}}">
                         <div class="row">
+                            {{#posts}}
                             <div class="col-lg-4 col-md-4 col-sm-12">
                                 <div class="blog-box">
-                                    <div class="blog-header header-4">
-                                        <p class="blog-category"><a href="#">Announcements</a></p>
+                                    <div class="{{class}}">
+                                        <p class="blog-category"><a href="#">{{cat}}</a></p>
                                         <span class="blog-icon">
-                                            <img src="images/3.png">
+                                            <img src="{{img}}">
                                         </span>
-                                        <p class="blog-author"><a href="#">Spencer Finnell</a></p>
+                                        <p class="blog-author"><a href="#">{{name}}</a></p>
                                     </div>
                                     <div class="blog-content">
-                                        <h3 class="section-title"><a href="single">We Just Launched the Add-On Bundle!</a></h3>
-                                        <p class="blog-date">February 20, 2017</p>
+                                        <h3 class="section-title"><a href="single">{{title}}</a></h3>
+                                        <p class="blog-date">{{date}}</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <div class="blog-box">
-                                    <div class="blog-header header-5">
-                                        <p class="blog-category"><a href="#">Tutorial</a></p>
-                                        <span class="blog-icon">
-                                            <img src="images/3.png">
-                                        </span>
-                                        <p class="blog-author"><a href="#">Spencer Finnell</a></p>
-                                    </div>
-                                    <div class="blog-content">
-                                        <h3 class="section-title"><a href="single">Create or Override Widgets in Listify</a></h3>
-                                        <p class="blog-date">February 3, 2017</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <div class="blog-box">
-                                    <div class="blog-header header-6">
-                                        <p class="blog-category"><a href="#">Announcements</a></p>
-                                        <span class="blog-icon">
-                                            <img src="images/2.png">
-                                        </span>
-                                        <p class="blog-author"><a href="#">Adam Pickering</a></p>
-                                    </div>
-                                    <div class="blog-content">
-                                        <h3 class="section-title"><a href="single">Announcing a Brand New Astoundify</a></h3>
-                                        <p class="blog-date">February 1, 2017</p>
-                                    </div>
-                                </div>
-                            </div>
+                            {{/posts}}
                         </div>
-                    </div>
-                    
-                    <div class="blog-post">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <div class="blog-box">
-                                    <div class="blog-header header-7">
-                                        <p class="blog-category"><a href="#">Product Updates</a></p>
-                                        <span class="blog-icon">
-                                            <img src="images/2.png">
-                                        </span>
-                                        <p class="blog-author"><a href="#">Adam Pickering</a></p>
-                                    </div>
-                                    <div class="blog-content">
-                                        <h3 class="section-title"><a href="single">Listify 1.6 – Content Importer, Child theme creator, and more</a></h3>
-                                        <p class="blog-date">August 3, 2016</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <div class="blog-box">
-                                    <div class="blog-header header-8">
-                                        <p class="blog-category"><a href="#">Product Updates</a></p>
-                                        <span class="blog-icon">
-                                            <img src="images/2.png">
-                                        </span>
-                                        <p class="blog-author"><a href="#">Adam Pickering</a></p>
-                                    </div>
-                                    <div class="blog-content">
-                                        <h3 class="section-title"><a href="single">New Theme Update: Listify 1.5</a></h3>
-                                        <p class="blog-date">June 24, 2016</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <div class="blog-box">
-                                    <div class="blog-header header-9">
-                                        <p class="blog-category"><a href="#">Product Updates</a></p>
-                                        <span class="blog-icon">
-                                            <img src="images/2.png">
-                                        </span>
-                                        <p class="blog-author"><a href="#">Adam Pickering</a></p>
-                                    </div>
-                                    <div class="blog-content">
-                                        <h3 class="section-title"><a href="single">Listify 1.4</a></h3>
-                                        <p class="blog-date">May 22, 2016</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="blog-post">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <div class="blog-box">
-                                    <div class="blog-header header-10">
-                                        <p class="blog-category"><a href="#">Product Updates</a></p>
-                                        <span class="blog-icon">
-                                            <img src="images/2.png">
-                                        </span>
-                                        <p class="blog-author"><a href="#">Adam Pickering</a></p>
-                                    </div>
-                                    <div class="blog-content">
-                                        <h3 class="section-title"><a href="single">WP Job Manager – Reviews 1.6</a></h3>
-                                        <p class="blog-date">May 19, 2016</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {{/page.section1.blogs}}
 
                     <p class="align-center"><button class="btn btn-white btn-load">Load More</button></p>
                 </div>
@@ -258,8 +77,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-7 col-sm-12">
-                        <h2 class="offset-left">Join our Community</h2>
-                        <p class="updates offset-left">Get updates, freebies, exclusive sneak peeks, and much more!</p>
+                        <h2 class="offset-left">{{page.section2.title}}</h2>
+                        <p class="updates offset-left">{{page.section2.sub}}</p>
                     </div>
                     <div class="col-lg-6 col-md-5 col-sm-12 newsletter">
                         <form>
@@ -271,51 +90,7 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-links">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6"> 
-                        <h4 class="social-title">Themes</h4>
-                        <ul>
-                            <li><a href="#">Marketify</a></li>
-                            <li><a href="#">Jobify</a></li>
-                            <li><a href="#">Listify</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6">
-                        <h4 class="social-title">Add-ons</h4>
-                        <ul>
-                            <li><a href="#">Claim Listing</a></li>
-                            <li><a href="#">Statistics</a></li>
-                            <li><a href="#">View All →</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6">
-                        <h4 class="social-title">About Us</h4>
-                        <ul>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6">
-                        <h4 class="social-title">Get in touch</h4>
-                        <ul>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Facebook</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <p class="align-center copyright">
-            <img class="logo" src="images/dummy-logo.png"><br>
-            Copyright © 2012—2019 Astoundify, Inc. All rights reserved.
-        </p>
-        
-    </footer>
+    {{>footer}}
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

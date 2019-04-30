@@ -1,5 +1,8 @@
+header {
+    position: relative;
+    z-index: 10;
+} 
 .banner-img {
-    background-image: url(../images/about-hero.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: scroll;
@@ -196,6 +199,10 @@ footer .footer-links ul li a:hover {
 .newsletter .fab {
     position: absolute;
     top: 0;
+}
+footer .help,
+footer .social {
+    display: none;
 }
 
 

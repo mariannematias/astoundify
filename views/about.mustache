@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Astoundify</title>
+    <title>{{global.name}}</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/aos.css" rel="stylesheet">
@@ -18,49 +18,17 @@
 
   <body>
         <div class="head-section">
-            <header>
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="toggle fas fa-bars"></i>
-                        </button>
-                        <a class="navbar-brand" href="/">
-                            <img class="logo" src="images/dummy-logo.png" class="d-inline-block align-top" alt="">
-                            <span>Astoundify</span>
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarSearch" aria-controls="navBarSearch" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="toggle fas fa-search"></i>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-item nav-link active" href="blog">Blog</a>
-                                <a class="nav-item nav-link" href="about">About</a>
-                            </div>
-        
-                            <a class="nav-login" href="#">Login</a>
-                            <button class="btn my-2 my-sm-0 sign-up">Sign Up</button>
-                        </div>
-                        <div class="collapse navbar-collapse" id="navBarSearch">  
-                            <form class="form-inline ml-auto">
-                                <input class="form-control search-input" type="search" placeholder="Search..." aria-label="Search">
-                            </form>
-                            <a class="social-icon" href="#"><span class="fas fa-shopping-bag"></span>
-                            <a class="nav-login" href="#">Login</a>
-                            <button class="btn my-2 my-sm-0 sign-up">Sign Up</button>
-                        </div>
-                    </div>
-                </nav> 
-            </header>
+            {{>header}}
             <section class="banner-section">
                 <div class="container">
-                    <div class="align-center" >
-                        <p class="blue-title">About Us</p>
-                        <h1 class="section-title">We're a small team making big products.</h1>
-                        <p class="sub-hero">All the tools you need to improve your online business.</p>
+                    <div class="align-center">
+                        <p class="blue-title">{{page.hero.blue}}</p>
+                        <h1 class="section-title">{{page.hero.title}}</h1>
+                        <p class="sub-hero">{{page.hero.sub}}</p>
                     </div>
                 </div>
             </section>
-        <div class="banner-img"></div>
+        <div class="banner-img" style="background-image: url({{page.hero.bg}});"></div>
         </div>
 
     <main>
@@ -68,13 +36,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-md-7 order-md-2 col-sm-12 sketch-desc">
-                        <p class="blue-title">Empowering Businesses</p>
-                        <h2 class="section-title">We win when you win.</h2>
-                        <p class="subtitle">Our mission is to make starting a successful business online accessible to everyone. We're building tools & products to help our customers go from an idea to revenue without ever having to write a line of code. Our customers depend on us for their business and we are constantly setting the bar for great customer support.</p>
+                        <p class="blue-title">{{page.section1.blue}}</p>
+                        <h2 class="section-title">{{page.section1.title}}</h2>
+                        <p class="subtitle">{{page.section1.sub}}</p>
                     </div>
                     <div class="col-lg-5 col-md-5 order-md-1 col-sm-12">
                         <p class="sketch">
-                            <img src="images/sketch.jpg">
+                            <img src="{{page.section1.img}}">
                         </p>
                     </div>
                 </div>
@@ -83,119 +51,68 @@
 
         <section class="blue-section">
             <div class="container">
-                <p class="blue-title align-center">Meet the Team</p>
-                <h1 class="team-title align-center">We're an international team.</h1>
+                <p class="blue-title align-center">{{page.section2.blue}}</p>
+                <h1 class="team-title align-center">{{page.section2.title}}</h1>
                 <div class="row team">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="member overlay-image">
-                            <div class="member-img">
-                                <img src="images/team1.jpg">
-                            </div>
-                            <div class="member-info">
-                                <p><span class="position">Co-Founder</span></p>
-                                <h4 class="member-name">Adam Pickering</h4>
-                                <span class="address">Toronto, Canada</span>
-                                <ul class="social-links">
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="member">
-                            <div class="member-img">
-                                <img src="images/team2.jpg">
-                            </div>
-                            <div class="member-info">
-                                <p><span class="position">Co-Founder</span></p>
-                                <h4 class="member-name">Spencer Finnell</h4>
-                                <span class="address">Orlando, FL</span>
-                                <ul class="social-links">
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-github"></i></i></a></li>
-                                </ul>
+                    {{#page.section2.team}}
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="member">
+                                <div class="member-img">
+                                    <img src="{{img}}">
+                                </div>
+                                <div class="member-info">
+                                    <p><span class="position">{{position}}</span></p>
+                                    <h4 class="member-name">{{name}}</h4>
+                                    <span class="address">{{address}}</span>
+                                    <ul class="social-links">
+                                        <li><a href="#"><i class="{{link1}}"></i></a></li>
+                                        <li><a href="#"><i class="{{link2}}"></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="member">
-                            <div class="member-img">
-                                <img src="images/team4.jpg">
-                            </div>
-                            <div class="member-info">
-                                <p><span class="position">Support Lead</span></p>
-                                <h4 class="member-name">Fernando Salinas</h4>
-                                <span class="address">Toronto, Canada</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="member">
-                            <div class="member-img">
-                                <img src="images/team1.jpg">
-                            </div>
-                            <div class="member-info">
-                                <p><span class="position">Developer</span></p>
-                                <h4 class="member-name">David Chandra</h4>
-                                <span class="address">Java, Indonesia</span>
-                                <ul class="social-links">
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-github"></i></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    {{/page.section2.team}}
                 </div>
             </div>
         </section>
 
         <section class="white-section no-padding">
             <div class="container">
-                <p class="blue-title align-center">Our Culture</p>
-                <h1 class="team-title align-center block">Learn, share and grow with our community.</h1>
+                <p class="blue-title align-center">{{page.section3.blue}}</p>
+                <h1 class="team-title align-center block">{{page.section3.title}}</h1>
             </div>
             <div class="container-fluid image-list">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12 list">
-                        <img src="images/work6.jpg">
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 list">
-                        <img src="images/work1.jpg">
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 list">
-                        <img src="images/work2.jpg">
-                    </div>
+                    {{#page.section3.list1}}
+                        <div class="col-lg-4 col-md-4 col-sm-12 list">
+                            <img src="{{src}}">
+                        </div>
+                    {{/page.section3.list1}}
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12 list">
-                        <img src="images/work3.jpg">
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 list">
-                        <img src="images/work4.jpg">
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 list">
-                        <img src="images/work5.jpg">
-                    </div>
+                    {{#page.section3.list2}}
+                        <div class="col-lg-4 col-md-4 col-sm-12 list">
+                            <img src="{{src}}">
+                        </div>
+                    {{/page.section3.list2}}
                 </div>
             </div>
         </section>
 
         <section class="browse">
             <div class="container align-center">
-                <h2>Want to talk to us?</h2>
-                <p>Inquiring on a position, or have some ideas for us? Hit us up!</p>
-                <p><button class="btn btn-white">Get in touch</button></p>
+                <h2>{{page.section4.title}}</h2>
+                <p>{{page.section4.sub}}</p>
+                <p><button class="btn btn-white">{{page.section4.btn}}</button></p>
             </div>
         </section>
-
+ 
         <section class="blog-news align-center">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-7 col-sm-12">
-                        <h2 class="offset-left">Join our Community</h2>
-                        <p class="updates offset-left">Get updates, freebies, exclusive sneak peeks, and much more!</p>
+                        <h2 class="offset-left">{{page.section5.title}}</h2>
+                        <p class="updates offset-left">{{page.section5.sub}}</p>
                     </div>
                     <div class="col-lg-6 col-md-5 col-sm-12 newsletter">
                         <form>
@@ -207,51 +124,7 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-links">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6">
-                        <h4 class="social-title">Themes</h4>
-                        <ul>
-                            <li><a href="#">Marketify</a></li>
-                            <li><a href="#">Jobify</a></li>
-                            <li><a href="#">Listify</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6">
-                        <h4 class="social-title">Add-ons</h4>
-                        <ul>
-                            <li><a href="#">Claim Listing</a></li>
-                            <li><a href="#">Statistics</a></li>
-                            <li><a href="#">View All →</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6">
-                        <h4 class="social-title">About Us</h4>
-                        <ul>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6">
-                        <h4 class="social-title">Get in touch</h4>
-                        <ul>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Facebook</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <p class="align-center copyright">
-            <img class="logo" src="images/dummy-logo.png"><br>
-            Copyright © 2012—2019 Astoundify, Inc. All rights reserved.
-        </p>
-        
-    </footer>
+    {{>footer}}
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

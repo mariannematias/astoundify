@@ -3,9 +3,9 @@ const turbo = require('turbo360')({site_id: process.env.TURBO_APP_ID})
 const vertex = require('vertex360')({site_id: process.env.TURBO_APP_ID})
 const router = vertex.router()
 const home = require('../pages/home.json')
-// const blog = require('../pages/blog.json')
-// const single = require('../pages/single.json')
-// const products = require('../pages/products.json')
+const blog = require('../pages/blog.json')
+const single = require('../pages/single.json')
+const about = require('../pages/about.json')
 const global = require('../pages/global.json')
 
 /*  This is the home route. It renders the index.mustache page from the views directory.
@@ -20,15 +20,27 @@ router.get('/', (req, res) => {
 })
 
 router.get('/blog', (req, res) => {
-	res.render('blog', null)
+	const data = {
+		page: blog,
+		global: global
+	}
+	res.render('blog', data)
 })
 
 router.get('/about', (req, res) => {
-	res.render('about', null)
+	const data = {
+		page: about,
+		global: global
+	}
+	res.render('about', data)
 })
 
 router.get('/single', (req, res) => {
-	res.render('single', null)
+	const data = {
+		page: single,
+		global: global
+	}
+	res.render('single', data)
 })
 
 module.exports = router

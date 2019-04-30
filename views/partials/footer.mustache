@@ -46,9 +46,9 @@
                     <div class="col-lg-3 col-md-3 col-sm-6">
                         <h4 class="social-title">{{title}}</h4>
                         <ul>
-                            <li><a href="#">{{link1}}</a></li>
-                            <li><a href="#">{{link2}}</a></li>
-                            <li><a href="#">{{link3}}</a></li>
+                            {{#links}}
+                            <li><a href="#">{{text}}</a></li>
+                            {{/links}}
                         </ul>
                     </div>
                 {{/global.footer.links}}

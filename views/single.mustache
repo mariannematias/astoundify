@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Astoundify</title>
+    <title>{{global.name}}</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/aos.css" rel="stylesheet">
@@ -19,48 +19,16 @@
 
   <body>
         <div class="head-section">
-            <header>
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="toggle fas fa-bars"></i>
-                        </button>
-                        <a class="navbar-brand" href="/">
-                            <img class="logo" src="images/dummy-logo.png" class="d-inline-block align-top" alt="">
-                            <span>Astoundify</span>
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarSearch" aria-controls="navBarSearch" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="toggle fas fa-search"></i>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-item nav-link active" href="blog">Blog</a>
-                                <a class="nav-item nav-link" href="about">About</a>
-                            </div>
-        
-                            <a class="nav-login" href="#">Login</a>
-                            <button class="btn my-2 my-sm-0 sign-up">Sign Up</button>
-                        </div>
-                        <div class="collapse navbar-collapse" id="navBarSearch">  
-                            <form class="form-inline ml-auto">
-                                <input class="form-control search-input" type="search" placeholder="Search..." aria-label="Search">
-                            </form>
-                            <a class="social-icon" href="#"><span class="fas fa-shopping-bag"></span>
-                            <a class="nav-login" href="#">Login</a>
-                            <button class="btn my-2 my-sm-0 sign-up">Sign Up</button>
-                        </div>
-                    </div>
-                </nav> 
-            </header>
+            {{>header}}
             <section class="banner-section">
                 <div class="container">
                     <div class="align-center" >
-                        <h1 class="section-title">Astoundify Live: Ways to speed up your Listify site!</h1>
+                        <h1 class="section-title">{{page.hero.title}}</h1>
                         <div class="post">
-                            <p class="align-center author">by<a href="#">Adam Pickering</a></p>
+                            <p class="align-center author">by<a href="#">{{page.hero.name}}</a></p>
                             <ul class="post-details">
-                                <li><a href="#">Live</a></li>
-                                <li>March 10, 2017</li>
+                                <li><a href="#">{{page.hero.cat}}</a></li>
+                                <li>{{page.hero.date}}</li>
                             </ul>
                         </div>
                     </div>
@@ -74,17 +42,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-12 blog-col reading">
-                        <span class="blog-head">Reading</span>
-                        <p>Astoundify Live: Ways to speed up your Listify site!</p>
+                        <span class="blog-head">{{page.section1.meta.list1.title}}</span>
+                        <p>{{page.section1.meta.list1.sub}}</p>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 blog-col blog-share">
-                        <a href="#" class="blog-twitter"><i class="fab fa-twitter"></i>Tweet</a>
-                        <a href="#" class="blog-fb"><i class="fab fa-facebook-f"></i>Share</a>
+                        <a href="#" class="blog-twitter"><i class="fab fa-twitter"></i>{{page.section1.meta.list2.social1}}</a>
+                        <a href="#" class="blog-fb"><i class="fab fa-facebook-f"></i>{{page.section1.meta.list2.social2}}</a>
                         <input type="text" value="https://astoundify.com/?p=59851">
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12 blog-col blog-comments">
-                        <span class="blog-head">Discussion</span>
-                        <a href="#comments" class="comment-count"><i class="fas fa-comment"></i>2 Responses</a>
+                        <span class="blog-head">{{page.section1.meta.list3.title}}</span>
+                        <a href="#comments" class="comment-count"><i class="fas fa-comment"></i>{{page.section1.meta.list3.sub}}</a>
                     </div>
                 </div>
             </div>
@@ -93,51 +61,45 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-12 col-sm-12 container-post">
-                        <p>Okay so here it is, my first time doing a <a href="#">Facebook Live stream</a>, 
-                            and here’s the replay of the event from our Facebook Page, don’t forget to 
-                            <a href="#">like our page</a>. Thanks to everyone who showed up and asked questions, 
-                            I had fun setting this up and attempting to install a new plugin called the
-                            <a href="#">“Gonzales plugin”</a> that sped up the site! (Sorry for the cut out in audio 
-                            at the end, I’ll work on that.)</p>
+                        <p>{{page.section3.content.p}} <a href="#">{{page.section3.content.p-a}}</a>, 
+                            {{page.section3.content.p2}} <a href="#">{{page.section3.content.p-a2}}</a>. {{page.section3.content.p3}}</p>
 
-                        <p>I’ll be doing this every Friday starting next week (unless no one shows up). 
-                            You can watch last week’s episode below, then send in your own question for the next show. 
-                            The next show will be on <a href="#">“Setting up WordPress SEO by Yoast The Correct Way”</a> 
-                            so make sure you <a href="#">confirm that you’ll be attending this event on Facebook</a> 
-                            on <strong>March 17th 2017.</strong></p>
+                        <p> {{page.section3.content2.p}} <a href="#">{{page.section3.content2.p-a}}</a> 
+                            {{page.section3.content2.p2}} <a href="#">{{page.section3.content2.p-a2}}</a> 
+                            on <strong>{{page.section3.content2.p3}}</strong>.</p>
 
                         <div class="embed-video">
                             <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FAstoundify%2Fvideos%2F1010331349067882%2F&width=760&show_text=true&height=505&appId" width="760" height="505" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
                         </div>
 
                         <div>
-                            <span><a href="#" class="tag">Live</a></span>
+                            <span><a href="#" class="tag">{{page.section3.cat}}</a></span>
                             <div class="author-box">
                                 <div class="author-info">
-                                    <img src="images/2.png">
-                                    <h4>Adam Pickering</h4>
-                                    <p>Semi-Genius. Designer | Co-founder @Astoundify</p>
+                                    <img src="{{page.section3.author.img}}">
+                                    <h4>{{page.section3.author.name}}</h4>
+                                    <p>{{page.section3.author.position}}</p>
                                 </div>
-                                <button class="btn btn-white btn-load">View Posts</button>
+                                <button class="btn btn-white btn-load">{{page.section3.author.btn}}</button>
                             </div>
                         </div>
 
                         <div class="prev-post">
-                            <span><a href="#"><i class="fas fa-chevron-left"></i>Prev</a></span>
-                            <h4>6 Ways to Quickly Monetize Your Directory Site</h4>
+                            <span><a href="#"><i class="fas fa-chevron-left"></i>{{page.section3.prev.nav}}</a></span>
+                            <h4>{{page.section3.prev.text}}</h4>
                         </div>
 
                         <div id="comments" class="comments">
                             <div class="comment-box">
                                 <p class="comment-author">
-                                    <img src="images/3.png">
-                                    <span class="name">ramasrinivas</span>
+                                    <img src="{{page.section3.comments.img}}">
+                                    <span class="name">{{page.section3.comments.name}}</span>
                                 </p>
-                                <p class="time-stamp"><span>2 years ago</span></p>
+                                <p class="time-stamp"><span>{{page.section3.comments.time}}</span></p>
                                 <div class="comment-body">
-                                    <p>Does the 7 day free trial include plugins also</p>
+                                    <p>{{page.section3.comments.body}}</p>
                                     <div class="replies">
-                                        <a href="#" class="reply-view">View Replies<i class="fas fa-comment"></i></a>
+                                        <a href="#" class="reply-view">{{page.section3.comments.reply}}<i class="fas fa-comment"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -151,8 +113,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-7 col-sm-12">
-                        <h2 class="offset-left"">Join our Community</h2>
-                        <p class="updates offset-left"">Get updates, freebies, exclusive sneak peeks, and much more!</p>
+                        <h2 class="offset-left">{{page.section2.title}}</h2>
+                        <p class="updates offset-left">{{page.section2.sub}}</p>
                     </div>
                     <div class="col-lg-6 col-md-5 col-sm-12 newsletter">
                         <form>
@@ -164,51 +126,7 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-links">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6"> 
-                        <h4 class="social-title">Themes</h4>
-                        <ul>
-                            <li><a href="#">Marketify</a></li>
-                            <li><a href="#">Jobify</a></li>
-                            <li><a href="#">Listify</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6">
-                        <h4 class="social-title">Add-ons</h4>
-                        <ul>
-                            <li><a href="#">Claim Listing</a></li>
-                            <li><a href="#">Statistics</a></li>
-                            <li><a href="#">View All →</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6">
-                        <h4 class="social-title">About Us</h4>
-                        <ul>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6">
-                        <h4 class="social-title">Get in touch</h4>
-                        <ul>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Facebook</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <p class="align-center copyright">
-            <img class="logo" src="images/dummy-logo.png"><br>
-            Copyright © 2012—2019 Astoundify, Inc. All rights reserved.
-        </p>
-        
-    </footer>
+    {{>footer}}
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

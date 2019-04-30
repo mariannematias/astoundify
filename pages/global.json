@@ -41,26 +41,19 @@
     "links": [
       {
         "title": "Themes",
-        "link1": "Marketify",
-        "link2": "Jobify",
-        "link3": "Listify"
+        "links": [{"text": "Marketify"}, {"text": "Jobify"}, {"text": "Listify"}]
       },
       {
         "title": "Add-ons",
-        "link1": "Claim Listing",
-        "link2": "Statistics",
-        "link3": "View All →"
+        "links": [{"text": "Claim Listing"}, {"text": "Statistics"}, {"text": "View All →"}]
       },
       {
         "title": "About Us",
-        "link1": "Team",
-        "link2": "Blog"
+        "links": [{"text": "Team"}, {"text": "Blog"}]
       },
       {
         "title": "Get in touch",
-        "link1": "Support",
-        "link2": "Twitter",
-        "link3": "Facebook"
+        "links": [{"text": "Support"}, {"text": "Twitter"}, {"text": "Facebook"}]
       }
     ],
     "copyright": {
