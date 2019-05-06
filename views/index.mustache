@@ -35,7 +35,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 banner-right">
                         <div class="banner-frame">
-                            <img class="home-img" src="{{page.hero.img}}" alt=""> 
+                            <img class="home-img" src="{{{page.hero.img}}}" alt=""> 
                         </div>
                     </div>
                 </div>
@@ -56,10 +56,10 @@
                     <div class="col-lg-5 col-md-5 order-md-1 col-sm-12">
                         <div class="theme-animation">
                             <div class="theme-front" data-aos="fade-up" data-aos-duration="3000">
-                                <img src="{{page.section1.img1}}">
+                                <img src="{{{page.section1.img1}}}">
                             </div>
                             <div class="theme-back" data-aos="fade-down" data-aos-duration="1500">
-                                <img src="{{page.section1.img2}}">
+                                <img src="{{{page.section1.img2}}}">
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                     <div class="col-lg-5 col-md-5 col-sm-12">
                         <div class="icons">
                             {{#page.section2.icons}}
-                                <span><img class="{{class}}" src="{{src}}" data-aos="{{fade}}" data-aos-duration="{{time}}"></span>
+                                <span><img class="{{class}}" src="{{{src}}}" data-aos="{{fade}}" data-aos-duration="{{time}}"></span>
                             {{/page.section2.icons}}
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <img class="testi-img" src="{{page.section3.img}}" alt=""> 
+                        <img class="testi-img" src="{{{page.section3.img}}}" alt=""> 
                     </div>
                 </div>
             </div>
