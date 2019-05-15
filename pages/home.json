@@ -3,19 +3,15 @@
     "title": "Themes & add-ons for job boards",
     "desc": "Astoundify provides everything you need to power your online business.",
     "btn_text": "Get Started",
-    "btn_color": "#3381f3",
-    "site_desc": {
-      "name": "Listify",
-      "desc": "user-driven directory"
-    },
+    "btn_color": "red",
     "img_site": "https://lh3.googleusercontent.com/lKl_9IEVaXi9TGu8TG_g55hReodS08j4X5UqPEzDQwX3NKgLNPmkBaSa4n3mVHSQWBPenMKDgR-BJfrQt-GuQEuf"
   },
   "section1": {
     "subheader": "Astoundify Themes",
     "title": "Handcrafted designs with usability and profit in mind.",
     "description": "With a focus on usability, conversions, empathy for your customers and tight integration with plugins like WooCommerce and Easy Digital Downloads, you won’t find better themes for your site.",
-    "btn_text": "Themes",
-    "btn_color": "#3381f3",
+    "btn_text": "Learn More",
+    "btn_color": "red",
     "img_front": "https://lh3.googleusercontent.com/lK5FPpDIQLLUSxdEnLoSOvuLnTrQiDb_GcS5lI_o7OTCYqn5MYbCL17WBOwpnf6Ni_DVe0snvi2U9MEcPfeoGzNChA",
     "img_back": "https://lh3.googleusercontent.com/RGx44br7NdPzrJgtkYl1bLlLy2_mPnzG-eaqaTTLT0OWW94qI03WCQr3ouHelyl5U2v-bLSmwAN1QJFtE_mDmFI"
   },
@@ -23,8 +19,8 @@
     "subheader": "Astoundify Add-ons",
     "title": "Add extra functionality to our themes with tailor-made plugins.",
     "description": "Our team has spent thousands of hours coding a variety of features you might want to add to your site, all so you can get started quickly and easily.",
-    "btn_text": "Add-ons",
-    "btn_color": "#3381f3",
+    "btn_text": "Learn More",
+    "btn_color": "red",
     "img_section": "https://lh3.googleusercontent.com/eyFyJ3pJxLf2MdydxBOZCNyfkzGIkI1Clx8qIGsnVCY885tOYV9k5wIWyxnp5EeICdNrp6syRnQx7YEQHtLZ_TP19w"
   },
   "section3": {
@@ -33,8 +29,8 @@
       "description": "If you’re trying to get a marketplace, directory or job board site launched in a matter of hours, there’s only one name you need to know: Astoundify.",
       "name": "JAWB.IO"
     },
-    "btn_text": "Visit Site",
-    "btn_color": "#fff",
+    "btn_text": "Learn More",
+    "btn_color": "white",
     "img_section": "https://lh3.googleusercontent.com/TjJS8lvgV9QpTuV8MjPuNzbsslspUVXDXkOjIbWsrrzpdJGCMYqZBPYC7si00VujoquS6VZ47AW2pN976MX-Odtb"
   },
   "section4": {
@@ -63,7 +59,7 @@
       "title": "Astoundify",
       "handle": "@Astoundify",
       "btn_text": "Follow Us",
-      "btn_color": "#fff"
+      "btn_color": "white"
     },
     "btn_text": "Visit Blog"
   }

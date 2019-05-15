@@ -15,28 +15,9 @@
       "btn_color": "#3381f3",
       "show_or_hide": "true"
     },
-    "social": {
-      "dribble": {
-        "title": "Sneak Peeks",
-        "desc": "Upcoming projects on our",
-        "desc_link": "Dribbble",
-        "url": "https://www.dribbble.com",
-        "show_or_hide": "true"
-      },
-      "facebook": {
-        "title": "Our Community",
-        "desc": "Join the",
-        "desc_link": "Astoundify Group",
-        "desc2": "on Facebook.",
-        "url": "https://www.facebook.com",
-        "img_team": "images/id.png",
-        "show_or_hide": "true"
-      },
-      "newsletter": {
-        "title": "Weekly Newsletter",
-        "subheader": "Stay informed on the latest from Astoundify.",
-        "show_or_hide": "true"
-      }
+    "newsletter": {
+      "title": "Weekly Newsletter",
+      "subheader": "Stay informed on the latest from Astoundify."
     },
     "link_list1": {
       "title": "About Us",

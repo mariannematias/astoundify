@@ -17,41 +17,10 @@
         </div>
     {{/global.footer.help.show_or_hide}}
 
-    <div class="social">
-        <div class="container">
-            <div class="row">
-                {{#global.footer.social.dribble.show_or_hide}}
-                <div class="col-lg-4 col-md-4 col-sm-12 sneak-peeks">
-                    <h4 class="social-title"><i class="fas fa-basketball-ball"></i>{{global.footer.social.dribble.title}}</h4>
-                    <p>{{global.footer.social.dribble.desc}} <a href="{{{{global.footer.social.dribble.url}}}}">{{global.footer.social.dribble.desc_link}}.</a></p>
-                </div>
-                {{/global.footer.social.dribble.show_or_hide}}
-
-                {{#global.footer.social.facebook.show_or_hide}}
-                <div class="col-lg-4 col-md-4 col-sm-12 community">
-                    <h4 class="social-title"><i class="fab fa-facebook-square"></i>{{global.footer.social.facebook.title}}</h4>
-                    <p>{{global.footer.social.facebook.desc}} <a href="{{global.footer.social.facebook.url}}">{{global.footer.social.facebook.desc_link}}</a> {{global.footer.social.facebook.desc2}}</p>
-                    <p><img src="{{{global.footer.social.facebook.img_team}}}" alt=""/> </p>
-                </div>
-                {{/global.footer.social.facebook.show_or_hide}}
-
-                {{#global.footer.social.newsletter.show_or_hide}}
-                <div class="col-lg-4 col-md-4 col-sm-12 mail">
-                    <h4 class="social-title"><i class="fas fa-envelope"></i>{{global.footer.social.newsletter.title}}</h4>
-                    <p>{{global.footer.social.newsletter.desc}}</p>
-                    <form>
-                        <input type="email" name="email" id="email" placeholder="Email Address" class="join-newsletter">
-                    </form>
-                </div>
-                {{/global.footer.social.newsletter.show_or_hide}}
-            </div>
-        </div>
-    </div>
-
-    <div class="footer-links">
+    <div class="social footer-links">
         <div class="container">
             <div class="row footer-link">
-                <div class="col-md-6 col-sm-6 align-center p-left-20">
+                <div class="col-md-3 col-sm-12 align-center">
                     <h4 class="social-title">{{global.footer.link_list1.title}}</h4>
                     <ul>
                         {{#global.footer.link_list1.links}}
@@ -59,13 +28,22 @@
                         {{/global.footer.link_list1.links}}
                     </ul>
                 </div>
-                <div class="col-md-6 col-sm-6 align-center p-right-20">
+
+                <div class="col-md-3 col-sm-12 align-center">
                     <h4 class="social-title">{{global.footer.link_list2.title}}</h4>
                     <ul>
                         {{#global.footer.link_list2.links}}
                             <li><a href="#">{{text}}</a></li>
                         {{/global.footer.link_list2.links}}
                     </ul>
+                </div>
+
+                <div class="col-md-4 offset-md-2 col-sm-12 mail">
+                    <h4 class="social-title"><i class="fas fa-envelope"></i>{{global.footer.newsletter.title}}</h4>
+                    <p>{{global.footer.newsletter.desc}}</p>
+                    <form>
+                        <input type="email" name="email" id="email" placeholder="Email Address" class="join-newsletter">
+                    </form>
                 </div>
             </div>
         </div>

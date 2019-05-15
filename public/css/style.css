@@ -141,7 +141,8 @@ section {
 }
 .banner-left {
     padding-right: 2.75rem;
-    padding-top: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 .legend {
     float: right;
@@ -186,7 +187,6 @@ section {
 }
 .get-started,
 .section-btn {
-    border: 1px solid #3381f3;
     border-radius: 50px;
     color: #fff;
     padding: 13px 45px;
@@ -489,6 +489,70 @@ section {
     padding: 120px 0;
     color: #fff;
     font-family:'OmnesExtraLight', sans-serif;
+}
+
+.register form {
+    margin: auto;
+    width: 350px;
+    position: relative;
+}
+.register-form {
+    padding: 100px 0;
+}
+.register-form legend {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+.register-form .button {
+    color: #fff;
+    background: #82B440;
+    border: 0;
+    width: 100%;
+    padding: 18px 50px 17px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.register-form .button:hover {
+    text-decoration: none;
+}
+.register-form input[type="submit"] {
+    background-color: #3381f3;
+    border-color: #3381f3;
+}
+.register-form .divider {
+    color: #7d91a5;
+    font-size: 14px;
+    letter-spacing: 2.14px;
+    text-align: center;
+}
+.register-form .divider:before {
+    content: '';
+    background: #a7b7c7;
+    height: 1px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 25%;
+    z-index: 1;
+}
+.register-form p input {
+    color: #7d91a5;
+    font-size: 16px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 4px;
+    box-shadow: none;
+    -webkit-appearance: none;
+    appearance: none;
+    text-align: center;
+    padding: 16px;
+    border: 0;
+    background: #272e47;
+    transition: none;
+}
+#edd-user-login {
+    margin-top: 30px;
 }
 
 /*** Footer ***/

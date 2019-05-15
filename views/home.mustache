@@ -13,12 +13,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-12 banner-left">
                         <h1 class="section-title banner-title">{{page.hero_section.title}}</h1>
                         <p class="banner-subtitle">{{page.hero_section.desc}}</p>
-                        <p class="banner-btn"><button class="btn get-started" style="background-color: {{page.hero_section.btn_color}}">{{page.hero_section.btn_text}}</button></p>
-
-                        <div class="legend">
-                            <p><a href="#">{{page.hero_section.site_desc.name}}</a></p>
-                            <p class="sub">{{page.hero_section.site_desc.desc}}</p></p>
-                        </div>
+                        <p class="banner-btn"><a class="register-btn" href="#register"><button class="btn get-started" style="background-color: {{page.hero_section.btn_color}}">{{page.hero_section.btn_text}}</button></a></p>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 banner-right">
                         <div class="banner-frame">
@@ -38,7 +33,7 @@
                         <p class="blue-title">{{page.section1.subheader}}</p>
                         <h2 class="section-title">{{page.section1.title}}</h2>
                         <p class="subtitle">{{page.section1.description}}</p>
-                        <p class="banner-btn"><button class="btn section-btn" style="background-color: {{page.section1.btn_color}}">{{page.section1.btn_text}}<i class="fas fa-arrow-right"></i></button></p>
+                        <p class="banner-btn"><a class="register-btn" href="#register"><button class="btn section-btn" style="background-color: {{page.section1.btn_color}}">{{page.section1.btn_text}}</button></a></p>
                     </div>
                     <div class="col-lg-5 col-md-5 order-md-1 col-sm-12">
                         <div class="theme-animation">
@@ -61,7 +56,7 @@
                         <p class="blue-title">{{page.section2.subheader}}</p>
                         <h2 class="section-title">{{page.section2.title}}</h2>
                         <p class="subtitle">{{page.section2.description}}</p>
-                        <p class="banner-btn"><button class="btn section-btn" style="background-color: {{page.section2.btn_color}}">{{page.section2.btn_text}}<i class="fas fa-arrow-right"></i></button></p>
+                        <p class="banner-btn"><a class="register-btn" href="#register"><button class="btn section-btn" style="background-color: {{page.section2.btn_color}}">{{page.section2.btn_text}}</button></a></p>
                     </div>
                     <div class="col-lg-5 col-md-5 col-sm-12">
                         <img class="img-right" src="{{page.section2.img_section}}">
@@ -78,7 +73,7 @@
                             <p class="quote"><i class="fas fa-quote-left"></i>{{page.section3.subheader}}</p>
                             <h3 class="testi-title">{{page.section3.testimonial.description}}</h3>
                             <p class="author">{{page.section3.testimonial.name}}</p>
-                            <p class="testi-btn"><button class="btn btn-white" style="background-color: {{page.section3.btn_color}}">{{page.section3.btn_text}}</button></p>
+                            <p class="testi-btn"><a class="register-btn" href="#register"><button class="btn btn-white" style="background-color: {{page.section3.btn_color}}">{{page.section3.btn_text}}</button></a></p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
@@ -152,6 +147,43 @@
                 <p class="blog-btn align-center"><a href="/blog"><button class="btn btn-white">{{page.section5.btn_text}}</button></a></p>
             </div>
         </section>
+
+        <section class="white-section align-center register-form" id="register">
+            <div class="register row">
+                <form id="edd_register_form" class="edd_form" action="" method="post">
+                    <fieldset>
+                        <legend>Register</legend>
+					    <p class="edd-envato-login_button-wrap edd-envato-login_edd-register">
+                            <a class="button edd-envato-login-button" href="#"><span>Register with Envato</span></a>		
+                        </p>
+                    
+                        <p class="divider"><span></span></p>
+
+                        <p>
+                            <input id="edd-user-login" class="required edd-input" type="text" name="edd_user_login" placeholder="USERNAME">
+                        </p>
+
+                        <p>
+                            <input id="edd-user-email" class="required edd-input" type="email" name="edd_user_email" placeholder="EMAIL">
+                        </p>
+
+                        <p>
+                            <input id="edd-user-pass" class="password required edd-input" type="password" name="edd_user_pass" placeholder="PASSWORD">
+                        </p>
+
+                        <p>
+                            <input id="edd-user-pass2" class="password required edd-input" type="password" name="edd_user_pass2" placeholder="CONFIRM PASSWORD">
+                        </p>
+
+                        <p>
+                            <input class="button" name="edd_register_submit" type="submit" value="Register">
+                        </p>
+
+				    </fieldset>
+                </form>
+			</div>
+        </section>
+
     </main>
 
     {{>footer}}
