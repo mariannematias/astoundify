@@ -25,32 +25,7 @@
     "description": "Our team has spent thousands of hours coding a variety of features you might want to add to your site, all so you can get started quickly and easily.",
     "btn_text": "Add-ons",
     "btn_color": "#3381f3",
-    "icons": {
-      "icon1": {
-        "img_icon": "https://lh3.googleusercontent.com/mOypA5Z482qIa2LbrNyFxnciGqZ8zIeIqpHWXWPhqyNjxxOofqrsQGHCC8-QIowZeSuBwiWNv-7N03sEe281OPek"
-      },
-      "icon2": {
-        "img_icon": "https://lh3.googleusercontent.com/Hte8s-LUxvWOHeFvmoeAjmY1MtPx0IgwZa9uFXbWwOsGFE31MI2Dp0kGcaLlS8eOoJ-pjw2fub2TOW-cEP-Q0kayRA"
-      },
-      "icon3": {
-        "img_icon": "https://lh3.googleusercontent.com/auDI8nq4rttL78RftKtaIz0U739J2Y2Rv697wlPaolO6SLifiBTVfXd7zsllY9dPumTqaQbIhPwfdYgXU9qClLUisg"
-      },
-      "icon4": {
-        "img_icon": "https://lh3.googleusercontent.com/CLBBldcv4tmD7ubQXo177o9v1tkXRfHLIKkoGJc3IatUWE9JM_az6AIVpCZ_D3eJ7sC8P23i41BLovdOzSN_UVCN"
-      },
-      "icon5": {
-        "img_icon": "https://lh3.googleusercontent.com/8Hg2KMnYT5qLnnHEWzdMQWZL-7NOVhpNLcq9jjDlK7Eo8EtD9NQbzRQ8R9v2-S3PnGLjix9zWrglPwRniua1GUoaySg"
-      },
-      "icon6": {
-        "img_icon": "https://lh3.googleusercontent.com/Hte8s-LUxvWOHeFvmoeAjmY1MtPx0IgwZa9uFXbWwOsGFE31MI2Dp0kGcaLlS8eOoJ-pjw2fub2TOW-cEP-Q0kayRA"
-      },
-      "icon7": {
-        "img_icon": "https://lh3.googleusercontent.com/mOypA5Z482qIa2LbrNyFxnciGqZ8zIeIqpHWXWPhqyNjxxOofqrsQGHCC8-QIowZeSuBwiWNv-7N03sEe281OPek"
-      },
-      "icon8": {
-        "img_icon": "https://lh3.googleusercontent.com/CLBBldcv4tmD7ubQXo177o9v1tkXRfHLIKkoGJc3IatUWE9JM_az6AIVpCZ_D3eJ7sC8P23i41BLovdOzSN_UVCN"
-      }
-    }
+    "img_section": "https://lh3.googleusercontent.com/eyFyJ3pJxLf2MdydxBOZCNyfkzGIkI1Clx8qIGsnVCY885tOYV9k5wIWyxnp5EeICdNrp6syRnQx7YEQHtLZ_TP19w"
   },
   "section3": {
     "subheader": "Testimonial",
