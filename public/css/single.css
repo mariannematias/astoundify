@@ -220,10 +220,19 @@
     margin-left: 8px;
 }
 
-footer .help,
-footer .social {
+footer .help {
     display: none;
 }
+footer .social .mail .fas {
+    color: #7d91a5;
+}
+footer .social .mail .join-newsletter {
+    margin-left: 0;
+    margin-top: 0;
+    color: #272e47;
+    background: #d0d6ea;
+}
+
 
 @media (max-width: 992px) {
     .container-post {

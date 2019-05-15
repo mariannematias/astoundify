@@ -493,7 +493,6 @@ section {
 
 .register form {
     margin: auto;
-    width: 350px;
     position: relative;
 }
 .register-form {
@@ -501,13 +500,16 @@ section {
 }
 .register-form legend {
     font-size: 36px;
-    margin-bottom: 25px;
+}
+.register-form .subtitle {
+    width: 80%;
+    margin: auto;
 }
 .register-form .button {
     color: #fff;
     background: #82B440;
     border: 0;
-    width: 100%;
+    width: 350px;
     padding: 18px 50px 17px;
     border-radius: 50px;
     text-transform: uppercase;
@@ -531,16 +533,15 @@ section {
     background: #a7b7c7;
     height: 1px;
     position: absolute;
-    width: 100%;
-    left: 0;
-    top: 25%;
+    width: 350px;
+    left: 27%;
+    top: 40%;
     z-index: 1;
 }
 .register-form p input {
     color: #7d91a5;
     font-size: 16px;
-    width: 100%;
-    max-width: 100%;
+    width: 350px;
     border-radius: 4px;
     box-shadow: none;
     -webkit-appearance: none;
