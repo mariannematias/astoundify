@@ -189,7 +189,6 @@ section {
     border: 1px solid #3381f3;
     border-radius: 50px;
     color: #fff;
-    background-color: #3381f3;
     padding: 13px 45px;
     margin-top: 12px;
     letter-spacing: 2.2px;
@@ -225,7 +224,6 @@ section {
 }
 .btn-white {
     border-color: #fff;
-    background: #fff;
     color: #7d91a5;
     padding: 13px 50px 12px;
     border-radius: 50px;
@@ -338,7 +336,6 @@ section {
 .testimonial .testi-img {
     position: absolute;
     bottom: 0;
-    height: 92%;
 }
 .feedback {
     padding: 245px 0;
@@ -456,7 +453,6 @@ section {
     background: #f39c12;
 }
 .featured {
-    background: url(../images/bg1.jpg) no-repeat top center;
     background-size: 100%;
     transition: all ease .3s;
     border-radius: 4px;
@@ -467,14 +463,6 @@ section {
     height: 340px;
     overflow: hidden;
     position: relative;
-}
-.featured-2 {
-    background: url(../images/bg2.jpg) no-repeat top center;
-    background-size: 100%;
-}
-.featured-3 {
-    background: url(../images/bg3.jpg) no-repeat top center;
-    background-size: 100%;
 }
 .featured:hover {
     cursor: pointer;
@@ -495,8 +483,12 @@ section {
     text-transform: uppercase;
     color: #1dcdd6;
 }
-.featured-desc h3 {
+.featured-desc h3,
+.featured-desc h3 a {
     color: #fff;
+}
+.featured-desc h3 a:hover {
+    text-decoration: none;
 }
 .featured-desc p {
     font-size: 18px;
@@ -511,11 +503,7 @@ section {
 }
 .social-feed {
     background-image: none;
-    background-color: #5D7FC8;
     padding: 75px 0 0;
-}
-.social-feed.twitter {
-    background-color: #36A8EF;
 }
 .social-feed p {
     margin-bottom: 0;

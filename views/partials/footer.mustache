@@ -1,40 +1,49 @@
 <footer>
-    <div class="help">
-        <div class="container">
-            <div class="row offset-left">
-                <div class="col-lg-8 col-md-8 col-sm-12">
-                    <i class="fas fa-cog"></i>
-                    <h3>{{global.footer.help.title}}</h3>
-                    <p class="help-sub">{{global.footer.help.sub.desc}} <a href="#">{{global.footer.help.sub.desc-a}}</a> or <a href="#">{{global.footer.help.sub.desc-a2}}</a> {{global.footer.help.sub.desc2}}</p>
+    {{#global.footer.help.show_or_hide}}
+        <div class="help">
+            <div class="container">
+                <div class="row offset-left">
+                    <div class="col-lg-8 col-md-8 col-sm-12">
+                        <i class="fas fa-cog"></i>
+                        <h3>{{global.footer.help.title}}</h3>
+                        <p class="help-sub">{{global.footer.help.subheader}}</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 help">
+                        <p><button class="btn section-btn" style="background-color: {{global.footer.help.btn_color}}">{{global.footer.help.btn_text}}</button></p>
+                    </div>
+                    
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 help">
-                    <p><button class="btn section-btn">{{global.footer.help.btn}}</button></p>
-                </div>
-                
             </div>
         </div>
-    </div>
+    {{/global.footer.help.show_or_hide}}
 
     <div class="social">
         <div class="container">
             <div class="row">
+                {{#global.footer.social.dribble.show_or_hide}}
                 <div class="col-lg-4 col-md-4 col-sm-12 sneak-peeks">
-                    <h4 class="social-title"><i class="fas fa-basketball-ball"></i>{{global.footer.social.lists.list1.title}}</h4>
-                    <p>{{global.footer.social.lists.list1.desc}} <a href="#">{{global.footer.social.lists.list1.desc-a}}.</a></p>
+                    <h4 class="social-title"><i class="fas fa-basketball-ball"></i>{{global.footer.social.dribble.title}}</h4>
+                    <p>{{global.footer.social.dribble.desc}} <a href="{{{{global.footer.social.dribble.url}}}}">{{global.footer.social.dribble.desc_link}}.</a></p>
                 </div>
+                {{/global.footer.social.dribble.show_or_hide}}
+
+                {{#global.footer.social.facebook.show_or_hide}}
                 <div class="col-lg-4 col-md-4 col-sm-12 community">
-                    <h4 class="social-title"><i class="fab fa-facebook-square"></i>{{global.footer.social.lists.list2.title}}</h4>
-                    <p>{{global.footer.social.lists.list2.desc}} <a href="#">{{global.footer.social.lists.list2.desc-a}}</a> {{global.footer.social.lists.list2.desc2}}</p>
-                    <p><img src="{{{global.footer.social.lists.list2.img}}}" alt=""> </p>
+                    <h4 class="social-title"><i class="fab fa-facebook-square"></i>{{global.footer.social.facebook.title}}</h4>
+                    <p>{{global.footer.social.facebook.desc}} <a href="{{global.footer.social.facebook.url}}">{{global.footer.social.facebook.desc_link}}</a> {{global.footer.social.facebook.desc2}}</p>
+                    <p><img src="{{{global.footer.social.facebook.img_team}}}" alt=""/> </p>
                 </div>
+                {{/global.footer.social.facebook.show_or_hide}}
+
+                {{#global.footer.social.newsletter.show_or_hide}}
                 <div class="col-lg-4 col-md-4 col-sm-12 mail">
-                    <h4 class="social-title"><i class="fas fa-envelope"></i>{{global.footer.social.lists.list3.title}}</h4>
-                    <p>{{global.footer.social.lists.list3.desc}}</p>
+                    <h4 class="social-title"><i class="fas fa-envelope"></i>{{global.footer.social.newsletter.title}}</h4>
+                    <p>{{global.footer.social.newsletter.desc}}</p>
                     <form>
                         <input type="email" name="email" id="email" placeholder="Email Address" class="join-newsletter">
                     </form>
                 </div>
-                
+                {{/global.footer.social.newsletter.show_or_hide}}
             </div>
         </div>
     </div>
@@ -42,23 +51,45 @@
     <div class="footer-links">
         <div class="container">
             <div class="row">
-                {{#global.footer.links}}
-                    <div class="col-lg-3 col-md-3 col-sm-6">
-                        <h4 class="social-title">{{title}}</h4>
-                        <ul>
-                            {{#links}}
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <h4 class="social-title">{{global.footer.link_list1.title}}</h4>
+                    <ul>
+                        {{#global.footer.link_list1.links}}
                             <li><a href="#">{{text}}</a></li>
-                            {{/links}}
-                        </ul>
-                    </div>
-                {{/global.footer.links}}
+                        {{/global.footer.link_list1.links}}
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <h4 class="social-title">{{global.footer.link_list2.title}}</h4>
+                    <ul>
+                        {{#global.footer.link_list2.links}}
+                            <li><a href="#">{{text}}</a></li>
+                        {{/global.footer.link_list2.links}}
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <h4 class="social-title">{{global.footer.link_list3.title}}</h4>
+                    <ul>
+                        {{#global.footer.link_list3.links}}
+                            <li><a href="#">{{text}}</a></li>
+                        {{/global.footer.link_list3.links}}
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <h4 class="social-title">{{global.footer.link_list4.title}}</h4>
+                    <ul>
+                        {{#global.footer.link_list4.links}}
+                            <li><a href="#">{{text}}</a></li>
+                        {{/global.footer.link_list4.links}}
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
     <p class="align-center copyright">
-        <img class="logo" src="{{{global.footer.copyright.img}}}"><br>
-        {{global.footer.copyright.text}}
+        <img class="logo" src="{{{global.img_logo}}}"/><br>
+        {{global.footer.copyright}}
     </p>
     
 </footer>

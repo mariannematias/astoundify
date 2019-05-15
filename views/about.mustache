@@ -1,19 +1,8 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>{{global.name}}</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/aos.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+  {{>head}}
     <link href="css/about.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
 
   <body>
@@ -22,13 +11,13 @@
             <section class="banner-section">
                 <div class="container">
                     <div class="align-center">
-                        <p class="blue-title">{{page.hero.blue}}</p>
-                        <h1 class="section-title">{{page.hero.title}}</h1>
-                        <p class="sub-hero">{{page.hero.sub}}</p>
+                        <p class="blue-title">{{page.hero_section.subheader}}</p>
+                        <h1 class="section-title">{{page.hero_section.title}}</h1>
+                        <p class="sub-hero">{{page.hero_section.description}}</p>
                     </div>
                 </div>
             </section>
-        <div class="banner-img" style="background-image: url({{page.hero.bg}});"></div>
+        <div class="banner-img" style="background-image: url({{page.hero_section.img_bg}});"></div>
         </div>
 
     <main>
@@ -36,13 +25,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-md-7 order-md-2 col-sm-12 sketch-desc">
-                        <p class="blue-title">{{page.section1.blue}}</p>
+                        <p class="blue-title">{{page.section1.subheader}}</p>
                         <h2 class="section-title">{{page.section1.title}}</h2>
-                        <p class="subtitle">{{page.section1.sub}}</p>
+                        <p class="subtitle">{{page.section1.description}}</p>
                     </div>
                     <div class="col-lg-5 col-md-5 order-md-1 col-sm-12">
                         <p class="sketch">
-                            <img src="{{{page.section1.img}}}">
+                            <img src="{{{page.section1.img_thumbnail}}}"/>
                         </p>
                     </div>
                 </div>
@@ -51,23 +40,19 @@
 
         <section class="blue-section">
             <div class="container">
-                <p class="blue-title align-center">{{page.section2.blue}}</p>
+                <p class="blue-title align-center">{{page.section2.subheader}}</p>
                 <h1 class="team-title align-center">{{page.section2.title}}</h1>
                 <div class="row team">
                     {{#page.section2.team}}
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="member">
                                 <div class="member-img">
-                                    <img src="{{{img}}}">
+                                    <img src="{{{img_member}}}"/>
                                 </div>
                                 <div class="member-info">
                                     <p><span class="position">{{position}}</span></p>
                                     <h4 class="member-name">{{name}}</h4>
                                     <span class="address">{{address}}</span>
-                                    <ul class="social-links">
-                                        <li><a href="#"><i class="{{link1}}"></i></a></li>
-                                        <li><a href="#"><i class="{{link2}}"></i></a></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -78,23 +63,11 @@
 
         <section class="white-section no-padding">
             <div class="container">
-                <p class="blue-title align-center">{{page.section3.blue}}</p>
+                <p class="blue-title align-center">{{page.section3.subheader}}</p>
                 <h1 class="team-title align-center block">{{page.section3.title}}</h1>
             </div>
             <div class="container-fluid image-list">
-                <div class="row">
-                    {{#page.section3.list1}}
-                        <div class="col-lg-4 col-md-4 col-sm-12 list">
-                            <img src="{{{src}}}">
-                        </div>
-                    {{/page.section3.list1}}
-                </div>
-                <div class="row">
-                    {{#page.section3.list2}}
-                        <div class="col-lg-4 col-md-4 col-sm-12 list">
-                            <img src="{{{src}}}">
-                        </div>
-                    {{/page.section3.list2}}
+                <div class="row" id="img_list">
                 </div>
             </div>
         </section>
@@ -102,8 +75,8 @@
         <section class="browse">
             <div class="container align-center">
                 <h2>{{page.section4.title}}</h2>
-                <p>{{page.section4.sub}}</p>
-                <p><button class="btn btn-white">{{page.section4.btn}}</button></p>
+                <p>{{page.section4.description}}</p>
+                <p><button class="btn btn-white" style="background-color: {{page.section4.btn_color}}">{{page.section4.btn_text}}</button></p>
             </div>
         </section>
  
@@ -126,9 +99,29 @@
 
     {{>footer}}
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+        window.__PRELOADED__={{{preloaded}}}
+    </script>
+
+    <!-- Vertex library for enabling site updates from https://www.vertex360.co -->
+    <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/vertex.min.js"></script>
+
+    {{>scripts}}
+
+    <script type="text/javascript">
+        (function(){
+        
+            var data = window.__PRELOADED__;
+            var pageData = data.page;
+            var images = pageData.section3.img_list;
+            var imagesArr = images.split(",");
+            var imageHTML = "";
+            imagesArr.forEach(function(image, i) {
+                imageHTML += '<div class="col-lg-4 col-md-4 col-sm-12 list"> <img src="' + image + '=s520"/> </div>';
+                console.log(imageHTML)
+            })
+            $("#img_list").html(imageHTML);
+        })()
+    </script>
   </body>
 </html>

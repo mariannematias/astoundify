@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html lang="en">
+  {{>head}}
+    <link href="/css/blog.css" rel="stylesheet">
+    <link href="/css/single.css" rel="stylesheet">
+  </head>
+
+  <body>
+        <div class="head-section">
+            {{>header}}
+            <section class="banner-section">
+                <div class="container">
+                    <div class="align-center" >
+                        <h1 class="section-title">{{post.title}}</h1>
+                        <div class="post">
+                            <ul class="post-details">
+                                <li>{{post.dateString}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <div class="banner-img" style="background-image: url({{post.image}})"></div>
+        </div>
+
+    <main>
+        <section class="blog-meta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 blog-col reading">
+                        <span class="blog-head">Reading</span>
+                        <p>{{post.preview}}</p>
+                    </div>
+                    <div class="col-md-9 col-sm-12 blog-col blog-share">
+                        <a href="https://www.twitter.com" class="blog-twitter"><i class="fab fa-twitter"></i>Twitter</a>
+                        <a href="https://www.facebook.com" class="blog-fb"><i class="fab fa-facebook-f"></i>Facebook</a>
+                        <input type="text" value="{{post.slug}}">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blue-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-sm-12 container-post">
+                        <div id="post-content">{{{post.text}}}</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{>newsletter}}
+    </main>
+
+    {{>footer}}
+
+    {{>scripts}}
+
+  </body>
+</html>

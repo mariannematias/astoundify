@@ -1,64 +1,59 @@
 { 
-  "name": "Astoundify",
-  "logo": "images/dummy-logo.png",
-  "head-nav": {
-    "list1": "Blog",
-    "list2": "About",
-    "list3": "Login",
-    "list4": "Signup"
+  "site_name": "Astoundify",
+  "img_logo": "https://lh3.googleusercontent.com/7Lv0oxjKPAvOxyZzd2F8NvpUeo0sfcqC9G5ajV0ISFSpisrtIbn3PXfJvYpo7_QOcbnohcaosnTwH1jygzFtZY3V",
+  "header-nav": {
+    "blog": { "text": "Blog"},
+    "about": { "text": "About"},
+    "login": { "text": "Login"},
+    "signup": { "text": "Signup"}
   },
   "footer": {
     "help": {
       "title": "Always ready to help.",
-      "sub": {
-        "desc": "View our",
-        "desc-a": "documentation",
-        "desc-a2": "speak to us directly",
-        "desc2": "about an issue."
-      },
-      "btn": "New Ticket"
+      "subheader": "View our documentation or speak to us directly about an issue.",
+      "btn_text": "New Ticket",
+      "btn_color": "#3381f3",
+      "show_or_hide": "true"
     },
     "social": {
-      "lists": {
-        "list1": {
-          "title": "Sneak Peeks",
-          "desc": "Upcoming projects on our",
-          "desc-a": "Dribbble"
-        },
-        "list2": {
-          "title": "Our Community",
-          "desc": "Join the",
-          "desc-a": "Astoundify Group",
-          "desc2": "on Facebook.",
-          "img": "images/id.png"
-        },
-        "list3": {
-          "title": "Weekly Newsletter",
-          "desc": "Stay informed on the latest from Astoundify."
-        }
+      "dribble": {
+        "title": "Sneak Peeks",
+        "desc": "Upcoming projects on our",
+        "desc_link": "Dribbble",
+        "url": "https://www.dribbble.com",
+        "show_or_hide": "true"
+      },
+      "facebook": {
+        "title": "Our Community",
+        "desc": "Join the",
+        "desc_link": "Astoundify Group",
+        "desc2": "on Facebook.",
+        "url": "https://www.facebook.com",
+        "img_team": "images/id.png",
+        "show_or_hide": "true"
+      },
+      "newsletter": {
+        "title": "Weekly Newsletter",
+        "subheader": "Stay informed on the latest from Astoundify.",
+        "show_or_hide": "true"
       }
     },
-    "links": [
-      {
-        "title": "Themes",
-        "links": [{"text": "Marketify"}, {"text": "Jobify"}, {"text": "Listify"}]
-      },
-      {
-        "title": "Add-ons",
-        "links": [{"text": "Claim Listing"}, {"text": "Statistics"}, {"text": "View All →"}]
-      },
-      {
-        "title": "About Us",
-        "links": [{"text": "Team"}, {"text": "Blog"}]
-      },
-      {
-        "title": "Get in touch",
+    "link_list1": {
+      "title": "Themes",
+      "links": [{"text": "Marketify"}, {"text": "Jobify"}, {"text": "Listify"}]
+    },
+    "link_list2": {
+      "title": "Add-ons",
+      "links": [{"text": "Claim Listing"}, {"text": "Statistics"}, {"text": "View All →"}]
+    },
+    "link_list3": {
+      "title": "About Us",
+      "links": [{"text": "Team"}, {"text": "Blog"}]
+    },
+    "link_list4": {
+      "title": "Get in touch",
         "links": [{"text": "Support"}, {"text": "Twitter"}, {"text": "Facebook"}]
-      }
-    ],
-    "copyright": {
-      "text": "Copyright © 2012—2019 Astoundify, Inc. All rights reserved.",
-      "img": "images/dummy-logo.png"
-    }
+    },
+    "copyright": "Copyright © 2012—2019 Astoundify, Inc. All rights reserved."
   }
 }

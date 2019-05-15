@@ -1,18 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>{{global.name}}</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/aos.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/blog.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  {{>head}}
+    <link href="/css/blog.css" rel="stylesheet">
   </head>
 
   <body>
@@ -21,16 +10,14 @@
             <section class="banner-section">
                 <div class="container">
                     <div class="align-center" >
-                        <p class="blue-title">{{page.hero.blue}}</p>
-                        <h1 class="section-title">{{page.hero.title}}</h1>
+                        <p class="blue-title">Featured</p>
+                        <h1 class="section-title">{{post.title}}</h1>
                         <div class="post">
-                            <p class="align-center author">by<a href="#">{{page.hero.name}}</a></p>
                             <ul class="post-details">
-                                <li><a href="#">{{page.hero.cat}}</a></li>
-                                <li>{{page.hero.date}}</li>
+                                <li>{{post.dateString}}</li>
                             </ul>
                         </div>
-                        <p><button class="btn btn-white"><a href="single">{{page.hero.btn}}</a></button></p>
+                        <p><button class="btn btn-white"><a href="/post/{{post.slug}}">Read More</a></button></p>
                     </div>
                 </div>
             </section>
@@ -40,61 +27,29 @@
     <main>
         <section class="white-section">
             <div class="container">
-                <ul class="sort-list">
-                    {{#page.section1.sort}}
-                        <li class="{{class}}"><a href="#">{{text}}</a></li>
-                    {{/page.section1.sort}}
-                </ul>
-                {{#page.section1.blogs}}
-                    <div class="{{class}}">
-                        <div class="row">
-                            {{#posts}}
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <div class="blog-box">
-                                    <div class="{{class}}">
-                                        <p class="blog-category"><a href="#">{{cat}}</a></p>
-                                        <span class="blog-icon">
-                                            <img src="{{{img}}}">
-                                        </span>
-                                        <p class="blog-author"><a href="#">{{name}}</a></p>
-                                    </div>
-                                    <div class="blog-content">
-                                        <h3 class="section-title"><a href="single">{{title}}</a></h3>
-                                        <p class="blog-date">{{date}}</p>
-                                    </div>
+                <div class="blog-post">
+                    <div class="row">
+                        {{#posts}}
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="blog-box">
+                                <div class="blog-header" style="background-image: url({{{image}}})"></div>
+                                <div class="blog-content">
+                                    <h3 class="section-title"><a href="/post/{{slug}}">{{title}}</a></h3>
+                                    <p class="blog-date">{{dateString}}</p>
                                 </div>
                             </div>
-                            {{/posts}}
                         </div>
-                    {{/page.section1.blogs}}
-
-                    <p class="align-center"><button class="btn btn-white btn-load">Load More</button></p>
-                </div>
-            </div>
-        </section>
-
-        <section class="browse blog-news">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-7 col-sm-12">
-                        <h2 class="offset-left">{{page.section2.title}}</h2>
-                        <p class="updates offset-left">{{page.section2.sub}}</p>
-                    </div>
-                    <div class="col-lg-6 col-md-5 col-sm-12 newsletter">
-                        <form>
-                            <input type="email" name="email" id="email" placeholder="Email Address" class="join-newsletter">
-                        </form>
+                        {{/posts}}
                     </div>
                 </div>
             </div>
         </section>
+
+        {{>newsletter}}
     </main>
 
     {{>footer}}
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/custom.js"></script>
+    {{>scripts}}
   </body>
 </html>

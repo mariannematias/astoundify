@@ -1,0 +1,173 @@
+
+<!doctype html>
+<html lang="en">
+  {{>head}}
+  </head>
+
+  <body>
+      <div class="head-section">
+        {{>header}}
+        <section class="banner-section" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 banner-left">
+                        <h1 class="section-title banner-title">{{page.hero_section.title}}</h1>
+                        <p class="banner-subtitle">{{page.hero_section.desc}}</p>
+                        <p class="banner-btn"><button class="btn get-started" style="background-color: {{page.hero_section.btn_color}}">{{page.hero_section.btn_text}}</button></p>
+
+                        <div class="legend">
+                            <p><a href="#">{{page.hero_section.site_desc.name}}</a></p>
+                            <p class="sub">{{page.hero_section.site_desc.desc}}</p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 banner-right">
+                        <div class="banner-frame">
+                            <img class="home-img" src="{{{page.hero_section.img_site}}}=s1080" alt=""/> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </div>
+
+    <main>
+        <section class="white-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7 order-md-2 col-sm-12">
+                        <p class="blue-title">{{page.section1.subheader}}</p>
+                        <h2 class="section-title">{{page.section1.title}}</h2>
+                        <p class="subtitle">{{page.section1.description}}</p>
+                        <p class="banner-btn"><button class="btn section-btn" style="background-color: {{page.section1.btn_color}}">{{page.section1.btn_text}}<i class="fas fa-arrow-right"></i></button></p>
+                    </div>
+                    <div class="col-lg-5 col-md-5 order-md-1 col-sm-12">
+                        <div class="theme-animation">
+                            <div class="theme-front" data-aos="fade-up" data-aos-duration="3000">
+                                <img src="{{{page.section1.img_front}}}">
+                            </div>
+                            <div class="theme-back" data-aos="fade-down" data-aos-duration="1500">
+                                <img src="{{{page.section1.img_back}}}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blue-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7 col-sm-12">
+                        <p class="blue-title">{{page.section2.subheader}}</p>
+                        <h2 class="section-title">{{page.section2.title}}</h2>
+                        <p class="subtitle">{{page.section2.description}}</p>
+                        <p class="banner-btn"><button class="btn section-btn" style="background-color: {{page.section2.btn_color}}">{{page.section2.btn_text}}<i class="fas fa-arrow-right"></i></button></p>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <div class="icons">
+                            <span><img class="icon icon-1" src="{{{page.section2.icons.icon1.img_icon}}}" data-aos="fade-down" data-aos-duration="1000"></span>
+                            <span><img class="icon icon-2" src="{{{page.section2.icons.icon2.img_icon}}}" data-aos="fade-down" data-aos-duration="1200"></span>
+                            <span><img class="icon icon-3" src="{{{page.section2.icons.icon3.img_icon}}}" data-aos="fade-down" data-aos-duration="2000"></span>
+                            <span><img class="icon icon-4" src="{{{page.section2.icons.icon4.img_icon}}}" data-aos="fade-down" data-aos-duration="1500"></span>
+                            <span><img class="icon icon-5" src="{{{page.section2.icons.icon5.img_icon}}}" data-aos="fade-up" data-aos-duration="1000"></span>
+                            <span><img class="icon icon-6" src="{{{page.section2.icons.icon6.img_icon}}}" data-aos="fade-up" data-aos-duration="1400"></span>
+                            <span><img class="icon icon-7" src="{{{page.section2.icons.icon7.img_icon}}}" data-aos="fade-up" data-aos-duration="1100"></span>
+                            <span><img class="icon icon-8" src="{{{page.section2.icons.icon8.img_icon}}}" data-aos="fade-up" data-aos-duration="1500"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-67 col-sm-12">
+                        <div class="align-center testi-box">
+                            <p class="quote"><i class="fas fa-quote-left"></i>{{page.section3.subheader}}</p>
+                            <h3 class="testi-title">{{page.section3.testimonial.description}}</h3>
+                            <p class="author">{{page.section3.testimonial.name}}</p>
+                            <p class="testi-btn"><button class="btn btn-white" style="background-color: {{page.section3.btn_color}}">{{page.section3.btn_text}}</button></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img class="testi-img" src="{{{page.section3.img_section}}}=s1080" alt=""/> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12 col-sm-12 offset-left">
+                        <p class="blue-title">{{page.section4.subheader}}</p>
+                        <h2 class="section-title feedback-title">{{page.section4.title}}</h2>
+                        <ul class="awards">
+                            {{#page.section4.lists}}
+                                <li>
+                                    <i class="fas fa-award"></i>
+                                    <p class="head">{{description}}</p>
+                                    <p class="subhead">{{label}}</p>
+                                </li>
+                            {{/page.section4.lists}}
+                        </ul>
+                    </div>
+                    <div class="dots">
+                        <span class="dot dot-1"></span>
+                        <span class="dot dot-2"></span>
+                        <span class="dot dot-3"></span>
+                        <span class="dot dot-4"></span>
+                        <span class="dot dot-5"></span>
+                        <span class="dot dot-6"></span>
+                        <span class="dot dot-7"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blue-section blog">
+            <div class="container">
+                <div class="block">
+                    <p class="blue-title align-center">{{page.section5.subheader}}</p>
+                    <h2 class="section-title feedback-title align-center">{{page.section5.title}}</h2>
+                </div>
+                <div class="row new-row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 tile">
+                        <div class="featured social-feed twitter align-center" style="background-color: {{page.section5.social-twitter.bg_color}}">
+                            <p><i class="fab fa-twitter"></i></i></p>
+                            <p class="blue-title">{{page.section5.social-twitter.title}}</p>
+                            <p><span class="handle">{{page.section5.social-twitter.handle}}</span></p>
+                            <p><button class="btn btn-white" style="background-color: {{page.section5.social-twitter.btn_color}}"">{{page.section5.social-twitter.btn_text}}</button></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 tile">
+                        <div class="featured" style="background-image: url({{post.image}})"> 
+                            <div class="featured-desc">
+                                <h3 class="section-title"><a href="/post/{{post.slug}}">{{post.title}}</a></h3>
+                                <p>{{post.dateString}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 tile">
+                        <div class="featured" style="background-image: url({{post1.image}})"> 
+                            <div class="featured-desc">
+                                <h3 class="section-title"><a href="/post/{{post1.slug}}">{{post1.title}}</a></h3>
+                                <p>{{post1.dateString}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="blog-btn align-center"><a href="/blog"><button class="btn btn-white">{{page.section5.btn_text}}</button></a></p>
+            </div>
+        </section>
+    </main>
+
+    {{>footer}}
+    
+    <!-- Vertex library for enabling site updates from https://www.vertex360.co -->
+    <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/vertex.min.js"></script>
+
+    {{>scripts}}
+  </body>
+</html>

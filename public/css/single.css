@@ -1,5 +1,10 @@
+.head-section,
 .banner-img {
     height: 500px;
+}
+.banner-img {
+    background-size: cover;
+    background-position: center;
 }
 .banner-img:before {
     height: 500px;
@@ -220,12 +225,6 @@ footer .social {
     display: none;
 }
 
-@media (max-width: 1200px) {
-    .blog-meta .blog-share input[type="text"] {
-        width: auto;
-    }
-}
-
 @media (max-width: 992px) {
     .container-post {
         margin-left: 0;
@@ -241,9 +240,6 @@ footer .social {
 @media (max-width: 768px) {
     .blog-meta .blog-col {
         border-bottom: 1px solid #DBE1DD;
-    }
-    .blog-meta .blog-share input[type="text"] {
-        width: 60%;
     }
     .blue-section {
         padding: 100px 0;

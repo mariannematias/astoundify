@@ -1,62 +1,57 @@
 { 
-  "hero": {
-    "blue": "About Us",
+  "hero_section": {
+    "subheader": "About Us",
     "title": "We're a small team making big products.",
-    "sub": "All the tools you need to improve your online business.",
-    "bg": "images/about-hero.jpg"
+    "description": "All the tools you need to improve your online business.",
+    "img_bg": "images/about-hero.jpg"
   },
   "section1": {
-    "blue": "Empowering Businesses",
+    "subheader": "Empowering Businesses",
     "title": "We win when you win.",
-    "sub": "Our mission is to make starting a successful business online accessible to everyone. We're building tools & products to help our customers go from an idea to revenue without ever having to write a line of code. Our customers depend on us for their business and we are constantly setting the bar for great customer support.",
-    "img": "images/sketch.jpg"
+    "description": "Our mission is to make starting a successful business online accessible to everyone. We're building tools & products to help our customers go from an idea to revenue without ever having to write a line of code. Our customers depend on us for their business and we are constantly setting the bar for great customer support.",
+    "img_thumbnail": "https://lh3.googleusercontent.com/MF34lB0P5PT_xubAEgHOkAbv-kwpC3_Y_Bwq8RUgQayLmPO403KKaRXEJiXGhi4o_bT1kXb4g8Q0d2Q0xzwxMPGoJA"
   },
   "section2": {
-    "blue": "Meet the Team",
+    "subheader": "Meet the Team",
     "title": "We're an international team.",
     "team": [ 
       {
-        "img": "images/team1.jpg",
+        "img_member": "https://lh3.googleusercontent.com/kDLQhRycdbzeO4tdHzbxkcw0GiUwae0eM0UyW5xvzUjZAa884TtrUl-OrtCxlucgmQlwcckMcZuW9MlvJR1lfCfMbw",
         "position": "Co-Founder",
         "name": "Adam Pickering",
-        "address": "Toronto, Canada",
-        "link1": "fab fa-twitter",
-        "link2": "fab fa-dribbble"
+        "address": "Toronto, Canada"
       },
       {
-        "img": "images/team2.jpg",
+        "img_member": "https://lh3.googleusercontent.com/2-fxxE01pfKiKd8GeukEu4sPqDDjKRH7L2Y_ci8tovX61xbqAlOdqOe3a-uYKoMBOZinVW66sE3MF_meQqj_R5gP",
         "position": "Co-Founder",
         "name": "Spencer Finnell",
-        "address": "Orlando, FL",
-        "link1": "fab fa-twitter",
-        "link2": "fab fa-github"
+        "address": "Orlando, FL"
       },
       {
-        "img": "images/team4.jpg",
+        "img_member": "https://lh3.googleusercontent.com/dnlwMkA83HojekVuZZNXHWB0u03eQLG0kbUcN7mPVCh7cSQFzEDzgQscWqG7a-DW15SJ6NYV4iQMNrli_EP6aVab0g",
         "position": "Support Lead",
         "name": "Fernando Salinas",
         "address": "Toronto, Canada"
       },
       {
-        "img": "images/team1.jpg",
+        "img_member": "https://lh3.googleusercontent.com/kDLQhRycdbzeO4tdHzbxkcw0GiUwae0eM0UyW5xvzUjZAa884TtrUl-OrtCxlucgmQlwcckMcZuW9MlvJR1lfCfMbw",
         "position": "Developer",
         "name": "David Chandra",
-        "address": "Java, Indonesia",
-        "link1": "fab fa-twitter",
-        "link2": "fab fa-github"
+        "address": "Java, Indonesia"
       }
     ]
   },
   "section3": {
-    "blue": "Our Culture",
+    "subheader": "Our Culture",
     "title": "Learn, share and grow with our community.",
-    "list1": [{"src": "images/work6.jpg"}, {"src": "images/work1.jpg"}, {"src": "images/work2.jpg"}],
-    "list2": [{"src": "images/work3.jpg"}, {"src": "images/work4.jpg"}, {"src": "images/work5.jpg"}]
+    "img_list": "https://lh3.googleusercontent.com/T7Jr6IwgsmWnFpzMZiMzG1gybKErQ6HzQA2AMEyGYmAmOVYLbD_WEqk_0Eb9MCId1OA6u64zIrHUD9yG-pWxgW-0gRE, https://lh3.googleusercontent.com/nCSm2sX_n1PQS3axndTNvZ-eWQJUPCgRSp5Hfl4aHwnIOfiOP9zaxQRp4Kg2IJ69O8TDGqVjAMu9wHyU0DLDrZPLsA, https://lh3.googleusercontent.com/niJLw1eZTESs1YyDVtahUtFIzrkFWLPRrl5cdiGSKyHimZ2xrUa7oPKAKZPXGoL8PYtO3rHdZd7Gc_LGLm43qNcTHw, https://lh3.googleusercontent.com/H0buR0tkoNWFGYv5RplYAPg6-YTY4ufwQAkkl9Vu1Rv9ZsdCg5myLN2zWExX5OUQkutftiQl4rEztjzfUZf7gSd4m00, https://lh3.googleusercontent.com/Skk_ebzaJtRFovHGY-I-Uib8qsI3FoLI91agfiTlt4ypOmGs8tnqw6IKohyYpGHJjr86C69FKm5L_5ValG4dVJQejK4, https://lh3.googleusercontent.com/GiLMYB9xKRaBQ_xNkAkzBk2SrVmE9svcdp7fyrv-rM3COVN9b4Xu3axvp8FFA8hrs4RyGpB5Kyx52POQLmH7_TaVFw"
+    
   },
   "section4": {
     "title": "Want to talk to us?",
-    "sub": "Inquiring on a position, or have some ideas for us? Hit us up!",
-    "btn": "Get in touch"
+    "description": "Inquiring on a position, or have some ideas for us? Hit us up!",
+    "btn_text": "Get in touch",
+    "btn_color": "#fff"
   },
   "section5": {
     "title": "Join our Community",
