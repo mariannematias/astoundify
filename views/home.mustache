@@ -5,6 +5,7 @@
   </head>
 
   <body>
+  <div id="vertex-container">
       <div class="head-section">
         {{>header}}
         <section class="banner-section" data-aos="fade-up" data-aos-duration="1000" id="hero_section">
@@ -83,7 +84,7 @@
             </div>
         </section>
 
-        <section class="feedback" id="section4">
+        <section class="feedback" id="section4" style="background-image: url({{{page.section4.img_bg}}});">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-md-12 col-sm-12 offset-left">
@@ -174,7 +175,7 @@
     </main>
 
     {{>footer}}
-
+    </div>
     <script>
         window.__PRELOADED__ = {{{preloaded}}}
     </script>

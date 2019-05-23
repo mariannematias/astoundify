@@ -1,11 +1,11 @@
 
 @font-face {
     font-family: Omnes;
-    src: url(fonts/Omnes.ttf)
+    src: url(../../css/fonts/Omnes.ttf)
 }
 @font-face {
     font-family: OmnesExtraLight;
-    src: url(fonts/omnes-extralight.otf)
+    src: url(../../css/fonts/omnes-extralight.otf)
 }
 
 body {
