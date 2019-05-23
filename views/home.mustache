@@ -7,7 +7,7 @@
   <body>
       <div class="head-section">
         {{>header}}
-        <section class="banner-section" data-aos="fade-up" data-aos-duration="1000">
+        <section class="banner-section" data-aos="fade-up" data-aos-duration="1000" id="hero_section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 banner-left">
@@ -26,7 +26,7 @@
       </div>
 
     <main>
-        <section class="white-section">
+        <section class="white-section" id="section1">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-md-7 order-md-2 col-sm-12">
@@ -49,7 +49,7 @@
             </div>
         </section>
 
-        <section class="blue-section pad-bottom-none">
+        <section class="blue-section pad-bottom-none" id="section2"> 
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-md-7 col-sm-12">
@@ -65,7 +65,7 @@
             </div>
         </section>
 
-        <section class="testimonial">
+        <section class="testimonial" id="section3">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-67 col-sm-12">
@@ -83,7 +83,7 @@
             </div>
         </section>
 
-        <section class="feedback">
+        <section class="feedback" id="section4">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-md-12 col-sm-12 offset-left">
@@ -112,7 +112,7 @@
             </div>
         </section>
 
-        <section class="blue-section blog">
+        <section class="blue-section blog" id="section5">
             <div class="container">
                 <div class="block">
                     <p class="blue-title align-center">{{page.section5.subheader}}</p>
@@ -153,16 +153,18 @@
                 <form id="edd_register_form" class="edd_form" action="" method="post">
                     <fieldset>
                         <legend>Register</legend>
-                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipiscing elit quae cum dixisset finem ille.</p>            
-                        <p class="divider"><span></span></p>
+                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipiscing elit quae cum dixisset finem ille.</p>
                         <p>
-                            <input id="edd-user-login" class="required edd-input" type="text" name="edd_user_login" placeholder="USERNAME">
+                            <input id="edd-user-firstName" class="required edd-input" type="text" name="edd_user_login" placeholder="FIRST NAME">
+                        </p>
+                        <p>
+                            <input id="edd-user-lastName" class="required edd-input" type="text" name="edd_user_login" placeholder="LAST NAME">
                         </p>
                         <p>
                             <input id="edd-user-email" class="required edd-input" type="email" name="edd_user_email" placeholder="EMAIL">
                         </p>
                         <p>
-                            <input class="button" name="edd_register_submit" type="submit" value="Register">
+                            <button id="btn-register" class="button" name="edd_register_submit">Register</button>
                         </p>
 				    </fieldset>
                 </form>
@@ -172,7 +174,10 @@
     </main>
 
     {{>footer}}
-    
+
+    <script>
+        window.__PRELOADED__ = {{{preloaded}}}
+    </script>
     <!-- Vertex library for enabling site updates from https://www.vertex360.co -->
     <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/vertex.min.js"></script>
 
