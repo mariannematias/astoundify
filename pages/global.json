@@ -9,6 +9,12 @@
     "login": { "text": "Login"},
     "signup": { "text": "Signup"}
   },
+  "register": {
+    "title": "Register",
+    "subtitle": "Lorem ipsum dolor sit amet consectetur adipiscing elit quae cum dixisset finem ille.",
+    "button_text": "Register",
+    "button_color": "forestgreen"
+  },
   "footer": {
     "help": {
       "title": "Always ready to help.",

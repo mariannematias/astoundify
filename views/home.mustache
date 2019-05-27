@@ -153,8 +153,8 @@
             <div class="register row">
                 <form id="edd_register_form" class="edd_form" action="" method="post">
                     <fieldset>
-                        <legend>Register</legend>
-                        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipiscing elit quae cum dixisset finem ille.</p>
+                        <legend>{{global.register.title}}</legend>
+                        <p class="subtitle">{{global.register.subtitle}}</p>
                         <p>
                             <input id="edd-user-firstName" class="required edd-input" type="text" name="edd_user_login" placeholder="FIRST NAME">
                         </p>
@@ -165,7 +165,7 @@
                             <input id="edd-user-email" class="required edd-input" type="email" name="edd_user_email" placeholder="EMAIL">
                         </p>
                         <p>
-                            <button id="btn-register" class="button" name="edd_register_submit">Register</button>
+                            <button id="btn-register" class="button" name="edd_register_submit" style="background: {{global.register.button_color}}">{{global.register.button_text}}</button>
                         </p>
 				    </fieldset>
                 </form>
