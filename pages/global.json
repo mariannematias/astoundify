@@ -1,7 +1,8 @@
 { 
   "site_name": "Astoundify",
   "img_favicon": "https://lh3.googleusercontent.com/5SVrpLI9utkuVJbQb48cpD3tar59mgWaWSAM73Ghj8dxFJMD2UOzkhO5ptWDd2uV2eqgSvDCSa-Ad8aOrygXx6nv",
-  "img_logo": "https://lh3.googleusercontent.com/7Lv0oxjKPAvOxyZzd2F8NvpUeo0sfcqC9G5ajV0ISFSpisrtIbn3PXfJvYpo7_QOcbnohcaosnTwH1jygzFtZY3V",
+  "img_logo_nav": "https://lh3.googleusercontent.com/sqDo8plJEnIjvnhySF-AyatjdQeXMSpIkoTNYJI0l1vzrcRd4oo-P4ggVn2nHKyINjSCg0sbR7DJRC-guO3ICO32vA",
+  "img_logo_footer": "https://lh3.googleusercontent.com/sqDo8plJEnIjvnhySF-AyatjdQeXMSpIkoTNYJI0l1vzrcRd4oo-P4ggVn2nHKyINjSCg0sbR7DJRC-guO3ICO32vA",
   "subscriber_confirmation": "Thank you for subscribing! We will contact you shortly.",
   "header-nav": {
     "blog": { "text": "Blog"},

@@ -75,8 +75,7 @@ section {
 
 /*** Navbar ***/
 .logo {
-    width: 30px;
-    height: 30px;
+    width: 160px;
 }
 .navbar {
     padding: 30px 0;
@@ -489,6 +488,11 @@ section {
     padding: 120px 0;
     color: #fff;
     font-family:'OmnesExtraLight', sans-serif;
+}
+
+footer .vertex img {
+    width: 160px;
+    padding: 1rem 0 0;
 }
 
 .register form {
